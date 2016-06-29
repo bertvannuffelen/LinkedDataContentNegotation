@@ -9,4 +9,3 @@ RUN a2enmod proxy
 
 RUN cp /config/cn.conf /opt/docker/etc/httpd/conf.d/
 RUN chmod 777 /config
-VOLUME /config
