@@ -1,0 +1,114 @@
+# baseURI: http://data.vlaanderen.be/ns/datatypes
+# imports: http://purl.org/dc/terms/PeriodOfTime
+# imports: http://www.w3.org/2004/02/skos/core#notation
+# imports: http://www.w3.org/2006/time#DateTimeInterval
+# imports: http://www.w3.org/ns/adms#identifier
+# imports: http://www.w3.org/ns/locn#Geometry
+# imports: http://www.w3.org/ns/prov#Entity
+
+@prefix : <http://data.vlaanderen.be/ns/datatypes#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.vlaanderen.be/ns/datatypes>
+  rdf:type owl:Ontology ;
+  owl:imports <http://purl.org/dc/terms/PeriodOfTime> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core#notation> ;
+  owl:imports time:DateTimeInterval ;
+  owl:imports <http://www.w3.org/ns/adms#identifier> ;
+  owl:imports <http://www.w3.org/ns/locn#Geometry> ;
+  owl:imports prov:Entity ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+:GeografischePositie
+  rdf:type owl:Class ;
+  rdfs:comment "Aanduiding van een geografische positie."^^xsd:string ;
+  rdfs:label "Geografische positie"^^xsd:string ;
+  rdfs:subClassOf :GeometrischObject ;
+.
+:Geometrie
+  rdf:type owl:Class ;
+  rdfs:label "Geometrie"^^xsd:string ;
+  owl:equivalentClass <http://www.w3.org/ns/locn#Geometry> ;
+.
+:GeometrischObject
+  rdf:type owl:Class ;
+  rdfs:label "GeometerischObject"^^xsd:string ;
+  rdfs:subClassOf owl:Thing ;
+.
+:Identificator
+  rdf:type owl:Class ;
+  rdfs:comment "Beschrijving van de oorsprong, versie, status en betekenis van de indentificator bij een resource."^^xsd:string ;
+  rdfs:label "Identificator"^^xsd:string ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf <http://www.w3.org/ns/adms#Identifier> ;
+.
+:Periode
+  rdf:type owl:Class ;
+  rdfs:comment "Aanduiding van een periode."^^xsd:string ;
+  rdfs:label "Periode"^^xsd:string ;
+  rdfs:subClassOf <http://purl.org/dc/terms/PeriodOfTime> ;
+  rdfs:subClassOf owl:Thing ;
+  owl:equivalentClass time:DateTimeInterval ;
+.
+:bron
+  rdf:type owl:DatatypeProperty ;
+  rdfs:comment "de bron die de identificator/sleutel uitgeeft"^^xsd:string ;
+  rdfs:domain :Identificator ;
+  rdfs:label "bron"^^xsd:string ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf <http://www.w3.org/ns/adms#schemaAgency> ;
+.
+:geometrie
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :GeometrischObject ;
+  rdfs:label "geometrie"^^xsd:string ;
+  rdfs:range :Geometrie ;
+  rdfs:subPropertyOf <http://www.w3.org/ns/locn#geometry> ;
+.
+:isActief
+  rdf:type owl:DatatypeProperty ;
+  rdfs:comment "duidt aan of deze identificator nog van toepassing is op een resource (de gekoppelde resource) of niet."^^xsd:string ;
+  rdfs:domain :Identificator ;
+  rdfs:label "isActief"^^xsd:string ;
+  rdfs:range xsd:boolean ;
+.
+:methode
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :GeografischePositie ;
+  rdfs:label "methode"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:revisie
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "Beschrijft van welke deze identificator een revise is"^^xsd:string ;
+  rdfs:domain :Identificator ;
+  rdfs:label "revisie"^^xsd:string ;
+  rdfs:range :Identificator ;
+.
+:sleutel
+  rdf:type owl:DatatypeProperty ;
+  rdfs:comment "de notatie van de intificator/sleutel"^^xsd:string ;
+  rdfs:domain :Identificator ;
+  rdfs:label "sleutel"^^xsd:string ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+.
+:specificatie
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :GeografischePositie ;
+  rdfs:label "specificatie"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:wijzigingsDatum
+  rdf:type owl:DatatypeProperty ;
+  rdfs:comment "Datum van de laatste wijziging."^^xsd:string ;
+  rdfs:domain :Identificator ;
+  rdfs:label "datum laatste wijziging"^^xsd:string ;
+  rdfs:range xsd:dateTime ;
+  rdfs:subPropertyOf <http://purl.org/dc/terms/modified> ;
+.

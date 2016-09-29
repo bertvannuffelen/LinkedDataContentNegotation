@@ -1,0 +1,222 @@
+# baseURI: http://data.vlaanderen.be/ns/adres
+# imports: http://data.vlaanderen.be/ns
+# imports: http://data.vlaanderen.be/ns/datatypes
+# imports: http://www.w3.org/2004/02/skos/core#Concept
+# imports: http://www.w3.org/ns/locn#locatorDesignator
+
+@prefix : <http://data.vlaanderen.be/ns/adres#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dvl: <http://data.vlaanderen.be/ns#> .
+@prefix dvldtp: <http://data.vlaanderen.be/ns/datatypes#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.vlaanderen.be/ns/adres>
+  rdf:type owl:Ontology ;
+  owl:imports <http://data.vlaanderen.be/ns> ;
+  owl:imports <http://data.vlaanderen.be/ns/datatypes> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core#Concept> ;
+  owl:imports locn:locatorDesignator ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+:Adres
+  rdf:type owl:Class ;
+  rdfs:comment "Informatie die toelaat om op een gestructureerde en unieke manier te verwijzen naar een 'gebouw', een 'gebouweenheid', een 'ligplaats', een 'standplaats' of een 'perceel' op basis van de naam van de 'gemeente', de 'straatnaam'  of  in sommige gevallen het 'adresgebied', het 'huisnummer' eventueel aangevuld met een 'busnummer' en met een 'postcode'."^^xsd:string ;
+  rdfs:label "Adres"^^xsd:string ;
+  rdfs:subClassOf dvl:KernObject ;
+.
+:AdresVoorstellingType
+  rdf:type owl:Class ;
+  rdfs:label "AdresVoorstellingType"^^xsd:string ;
+  rdfs:subClassOf owl:Thing ;
+  owl:equivalentClass locn:Address ;
+.
+:AdresseerbaarObject
+  rdf:type owl:Class ;
+  rdfs:label "AdresseerbaarObject"^^xsd:string ;
+  rdfs:subClassOf owl:Class ;
+.
+:LocatieAanduidingType
+  rdf:type owl:Class ;
+  rdfs:label "LocatieAanduidingType"^^xsd:string ;
+  rdfs:subClassOf dvl:CodeType ;
+.
+:LocatieNaamType
+  rdf:type owl:Class ;
+  rdfs:comment "Het type van de locatienaam."^^xsd:string ;
+  rdfs:label "LocatieNaamType"^^xsd:string ;
+  rdfs:subClassOf dvl:CodeType ;
+.
+:PostInfo
+  rdf:type owl:Class ;
+  rdfs:label "Addresseerbaar Object"^^xsd:string ;
+  rdfs:subClassOf dvl:KernObject ;
+.
+:StraatNaam
+  rdf:type owl:Class ;
+  rdfs:label "StraatNaam"^^xsd:string ;
+  rdfs:subClassOf dvl:KernObject ;
+.
+:UitgebreidAdres
+  rdf:type owl:Class ;
+  rdfs:label "UitgebreidAdres"^^xsd:string ;
+  rdfs:subClassOf :Adres ;
+.
+:aanduiding
+  rdf:type owl:DatatypeProperty ;
+  rdfs:comment "De aanduiding van een locatie."^^xsd:string ;
+  rdfs:domain :LocatieAanduidingType ;
+  rdfs:label "aanduiding"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:administratiefNiveau
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "administratiefNiveau"^^xsd:string ;
+  rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+.
+:administratieveEenheid
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :Adres ;
+  rdfs:label "administratieveEenheid"^^xsd:string ;
+.
+:adres
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "Het adres van een resource (adresseerbaar object)."^^xsd:string ;
+  rdfs:label "adres"^^xsd:string ;
+  rdfs:range :Adres ;
+  rdfs:subPropertyOf locn:address ;
+.
+:adresVoorstelling
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :AdresseerbaarObject ;
+  rdfs:label "adres"^^xsd:string ;
+  rdfs:range :AdresVoorstellingType ;
+.
+:busnummer
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Adres ;
+  rdfs:label "busnummer"^^xsd:string ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf locn:locatorDesignator ;
+.
+:geografischeNaam
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "geografischeNaam"^^xsd:string ;
+.
+:homoniemToevoeging
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :StraatNaam ;
+  rdfs:label "homoniemToevoeging"^^xsd:string ;
+.
+:huisnummer
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Adres ;
+  rdfs:label "huisnummer"^^xsd:string ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf locn:locatorDesignator ;
+.
+:isAdresGebied
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "isAdresGebied"^^xsd:string ;
+  rdfs:range xsd:boolean ;
+.
+:isNietOfficieel
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Adres ;
+  rdfs:label "isNietOfficieel"^^xsd:string ;
+  rdfs:range xsd:boolean ;
+.
+:isToegekendAan
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "Beschrijft aan welk adresseerbaar object het adres is toegekend."^^xsd:string ;
+  rdfs:domain :Adres ;
+  rdfs:label "isToegekendAan"^^xsd:string ;
+  rdfs:range dvl:AdresseerbaarObject ;
+.
+:locatieAanduiding
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :UitgebreidAdres ;
+  rdfs:label "locatieAanduiding"^^xsd:string ;
+  rdfs:range :LocatieAanduidingType ;
+  rdfs:subPropertyOf locn:locatorDesignator ;
+.
+:locatieNaam
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :UitgebreidAdres ;
+  rdfs:label "locatieNaam"^^xsd:string ;
+  rdfs:range :LocatieNaamType ;
+  rdfs:subPropertyOf locn:locatorName ;
+.
+:positie
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :Adres ;
+  rdfs:label "positie"^^xsd:string ;
+  rdfs:range dvldtp:GeografischePositie ;
+.
+:postCode
+  rdf:type owl:DatatypeProperty ;
+  rdfs:comment "de postcode van een adres."^^xsd:string ;
+  rdfs:domain :PostInfo ;
+  rdfs:label "postcode"^^xsd:string ;
+  rdfs:subPropertyOf locn:postCode ;
+.
+:postInfo
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "postInformatie van een adres."^^xsd:string ;
+  rdfs:domain :Adres ;
+  rdfs:label "postInfo"^^xsd:string ;
+  rdfs:range :PostInfo ;
+.
+:postNaam
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :PostInfo ;
+  rdfs:label "postNaam"^^xsd:string ;
+  rdfs:subPropertyOf locn:postName ;
+.
+:postbus
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :UitgebreidAdres ;
+  rdfs:label "postbus"^^xsd:string ;
+  rdfs:subPropertyOf locn:poBox ;
+.
+:status
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "statuscode van een adres"^^xsd:string ;
+  rdfs:domain :Adres ;
+  rdfs:label "status"^^xsd:string ;
+  rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+.
+:straatNaam
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :Adres ;
+  rdfs:label "straatNaam"^^xsd:string ;
+  rdfs:range :StraatNaam ;
+.
+:straatNaamStatusCode
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :StraatNaam ;
+  rdfs:label "straatNaamStatusCode"^^xsd:string ;
+  rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+.
+:verwijstNaarAdres
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :AdresVoorstellingType ;
+  rdfs:label "verwijstNaarAdres"^^xsd:string ;
+  rdfs:range :Adres ;
+.
+:verwijstNaarStraatNaam
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain :AdresVoorstellingType ;
+  rdfs:label "verwijstNaarStraatNaam"^^xsd:string ;
+  rdfs:range :StraatNaam ;
+.
+:volledigAdres
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :UitgebreidAdres ;
+  rdfs:label "volledig adres"^^xsd:string ;
+  rdfs:subPropertyOf locn:fullAddress ;
+.
