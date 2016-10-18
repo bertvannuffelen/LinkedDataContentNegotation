@@ -14,3 +14,8 @@ Namely the HTTP 300 respons has no standard respons body which can detail the al
 Therefore the handling of the HTTP 300 respons cannot be automated, and it it better to force the consumer to take explicit action
 in its client code.
 
+
+# open port 80 for testing
+docker run --rm --name=newcn -p 80:80 myproxy
+
+
