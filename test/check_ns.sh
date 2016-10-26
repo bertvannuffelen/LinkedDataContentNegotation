@@ -11,7 +11,7 @@ function check {
    if [ "$Cexec" = "$Tval" ] ; then
 	echo "ok"
    else 
-	echo "NOK"
+	echo "NOK: recieved $Cexec expected $Tval"
    fi
    nl
 };
@@ -35,14 +35,17 @@ C="http://data.vlaanderen.be/ns/gebouw"
 Tval=404
 no_header_check
 
+# we force currently that Accept header must be set
 C="http://data.vlaanderen.be/ns/gebouw.ttl"
 Tval=200
 no_header_check
 
+# we force currently that Accept header must be set
 C="http://data.vlaanderen.be/ns/gebouw.rdf"
 Tval=200
 no_header_check
 
+# we force currently that Accept header must be set
 C="http://data.vlaanderen.be/ns/gebouw.html"
 Tval=200
 no_header_check
@@ -69,11 +72,11 @@ function htmlttllheader {
 }
 
 C="http://data.vlaanderen.be/ns/"
-Tval=403
+Tval=404
 ttlheader
 header_check
 
-C="http://data.vlaanderen.be/ns/"
+C="http://data.vlaanderen.be/ns"
 Tval=200
 ttlheader
 header_check
@@ -88,8 +91,9 @@ Tval=200
 ttlheader
 header_check
 
+# ignore accept header if file extension is present
 C="http://data.vlaanderen.be/ns/gebouw.ttl"
-Tval=404
+Tval=200
 htmlheader
 header_check
 
@@ -98,7 +102,10 @@ header_check
 echo "request for non-existing ontology"
 echo "---------------------------------"
 
-curl $PARAMETERS  http://data.vlaanderen.be/ns/bestaatniet
+C="http://data.vlaanderen.be/ns/bestaatniet"
+Tval=404
+ttlheader
+header_check
 
 # bestaand urls
 # http://data.vlaanderen.be/id/straatnaam/10189
