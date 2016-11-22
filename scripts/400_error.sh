@@ -10,7 +10,7 @@ urldecode() {
 
 
 echo "Content-type: text/html"
-echo "Status: $REDIRECT_STATUS Condition Intercepted"
+echo "Status: $REDIRECT_STATUS Bad Request"
 echo ""
 echo '<html>'
 echo '<head>'
