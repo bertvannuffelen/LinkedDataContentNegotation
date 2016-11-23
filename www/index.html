@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html class="no-js" itemscope itemtype="http://schema.org/WebPage" lang="nl" dir="ltr">
+<head>
+  <title>Welcome ... | data.vlaanderen.be</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--[if IEMobile]>
+  <meta http-equiv="cleartype" content="on"/><![endif]-->
+  <script></script>
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="dns-prefetch" href="https://d201gzvprbtpxy.cloudfront.net" />
+<!--[if IE 9]>
+<link rel="prefetch" href="https://d201gzvprbtpxy.cloudfront.net" />
+<![endif]-->
+<script type="text/javascript" src="/sites/all/modules/custom/ip_widgets/js/ip_widgets.js"></script><meta name="google-site-verification" content="CsjS0GdapyzF4p8_e01U3bdvYRS8-SXNxpnFD7ed1ew" />
+<link rel="shortlink" href="/nl/node/458662" />
+<link rel="canonical" href="/nl/sorry" />
+<script type="text/javascript">
+window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(13),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,-1!==o.indexOf("dev")&&(s.dev=!0),-1!==o.indexOf("nr_dev")&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f?f.apply(this,a(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(14),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(7),t(6),"addEventListener"in window&&t(4),c.xhrWrappable&&t(8),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(7),s=t(6);t("loader").features.stn=!0,t(5);var c=NREUM.o.EV;o.on("fn-start",function(t,e){var n=t[0];n instanceof c&&(this.bstStart=Date.now())}),o.on("fn-end",function(t,e){var n=t[0];n instanceof c&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),s.on("fn-start",function(){this.bstStart=Date.now()}),s.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on("pushState-start",function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on("pushState-end",function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",r,!1),document.addEventListener("keypress",r,!1),document.addEventListener("click",r,!1)}},{}],4:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(15)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],5:[function(t,e,n){var r=t("ee").get("history"),o=t(15)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],6:[function(t,e,n){var r=t("ee").get("raf"),o=t(15)(r);e.exports=r,o.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],7:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(15)(i);e.exports=i,a.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),a.inPlace(window,["setInterval"],"setInterval-"),a.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),i.on("setInterval-start",r),i.on("setTimer-start",o)},{}],8:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,v,"fn-",s)}function i(t){w.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(4);var f=t("ee"),u=f.get("xhr"),d=t(15)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],9:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;l>r;r++)t.removeEventListener(d[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return i(r)}function i(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}function a(t,e){var n=f(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(10),u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(12),m=window.XMLHttpRequest;s.features.xhr=!0,t(8),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||10>h)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},a(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var a=i(r);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;l>s;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],10:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],11:[function(t,e,n){function r(t,e){return function(){o(t,[(new Date).getTime()].concat(a(arguments)),null,e)}}var o=t("handle"),i=t(13),a=t(14);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var s=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(s,function(t,e){newrelic[e]=r(f+e,"api")}),i(c,function(t,e){newrelic[e]=r(f+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),o("err",[t,(new Date).getTime()])}},{}],12:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],13:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],14:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],15:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(14),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);var u=f[v[n]];return u&&u.push([w,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",v[n]=e,e in f||(f[e]=[])})}var m={},v={},w={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return w}function i(){return new r}var a="nr@context",s=t("gos"),c=t(13),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!m++){var t=h.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(l,function(e,n){t[e]||(t[e]=n)});var n="https"===d.split(":")[0]||t.sslForHttp;h.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=h.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(13),f=window,u=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(11);var d=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},p=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),h=e.exports={offset:a(),origin:d,features:{},xhrWrappable:p};u.addEventListener?(u.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(u.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),s("mark",["firstbyte",a()],null,"api");var m=0},{}]},{},["loader",2,9,3]);
+;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"5f55e60651",applicationID:"12057579",sa:1}
+</script>
+  <link rel="icon" sizes="192x192" href="https://dij151upo6vad.cloudfront.net/1.latest/icons/app-icon/icon-highres-precomposed.png">
+  <link rel="apple-touch-icon" href="https://dij151upo6vad.cloudfront.net/1.latest/icons/app-icon/touch-icon-iphone-precomposed.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://dij151upo6vad.cloudfront.net/1.latest/icons/app-icon/touch-icon-ipad-precomposed.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://dij151upo6vad.cloudfront.net/1.latest/icons/app-icon/touch-icon-iphone-retina-precomposed.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://dij151upo6vad.cloudfront.net/1.latest/icons/app-icon/touch-icon-ipad-retina-precomposed.png">
+  <meta name="msapplication-square70x70logo" content="https://dij151upo6vad.cloudfront.net/1.latest/icons/app-icon/tile-small.png" />
+  <meta name="msapplication-square150x150logo" content="https://dij151upo6vad.cloudfront.net/1.latest/icons/app-icon/tile-medium.png" />
+  <meta name="msapplication-wide310x150logo" content="https://dij151upo6vad.cloudfront.net/1.latest/icons/app-icon/tile-wide.png" />
+  <meta name="msapplication-square310x310logo" content="https://dij151upo6vad.cloudfront.net/1.latest/icons/app-icon/tile-large.png" />
+  <meta name="msapplication-TileColor" content="#FFE615" />
+  <meta name="application-name" content="Vlaanderen" />
+  <noscript>
+    <link rel="stylesheet" href="https://d201gzvprbtpxy.cloudfront.net/sites/all/themes/portal_q2_2016/css/img.css?1477576724" />
+  </noscript>
+  <script>(function(d,p){var l=d.getElementsByTagName("link")[0],c=d.createElement("link");c.rel="stylesheet";c.href=p&&p>1?"//d201gzvprbtpxy.cloudfront.net/sites/all/themes/portal_q2_2016/css/img_2x.css?1477576724":"//d201gzvprbtpxy.cloudfront.net/sites/all/themes/portal_q2_2016/css/img.css?1477576724";l.parentNode.insertBefore(c,l)})(document,window.devicePixelRatio);</script>
+  <link rel="stylesheet" href="https://d201gzvprbtpxy.cloudfront.net/sites/all/themes/portal_q2_2016/css/css.css?1477576724" />
+  <link rel="stylesheet" href="https://dij151upo6vad.cloudfront.net/1.latest/css/vlaanderen-ui.css" />
+  <link type="text/css" rel="stylesheet" href="https://widgets.vlaanderen.be/modules/custom/infolijn_widget/assets/libraries/FlemishAuthorities.InfolijnWidget.GlobalHeader/3.0.0/GlobalHeader.css?mtime=1477425163" media="all" />
+<link type="text/css" rel="stylesheet" href="https://widgets.vlaanderen.be/modules/custom/infolijn_widget/assets/libraries/FlemishAuthorities.InfolijnWidget.GlobalFooter/3.0.0/GlobalFooter.css?mtime=1477425163" media="all" />
+</head>
+<!--[if lt IE 8]> <body class="lt-ie8 lt-ie9 lt-ie10 html not-front not-logged-in no-sidebars page-node page-node- page-node-458662 node-type-page domain-infolijn-portal specific-page-page-not-found i18n-nl error-page" > <![endif]-->
+<!--[if IE 8]> <body class="lt-ie9 html not-front not-logged-in no-sidebars page-node page-node- page-node-458662 node-type-page domain-infolijn-portal specific-page-page-not-found i18n-nl error-page" > <![endif]-->
+<!--[if IE 9]> <body class="lt-ie10 html not-front not-logged-in no-sidebars page-node page-node- page-node-458662 node-type-page domain-infolijn-portal specific-page-page-not-found i18n-nl error-page" > <![endif]-->
+<!--[if gt IE 9]><!--> <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-458662 node-type-page domain-infolijn-portal specific-page-page-not-found i18n-nl error-page" > <!--<![endif]-->
+    <div class="page">
+
+  <div class="layout layout--wide">
+    <div class="skiplink">
+      <a href="#main">Overslaan en naar de algemene inhoud gaan</a>
+    </div>
+  </div>
+
+                <div id="8013fc1e1c7e5e4f9046a578fa8cf38597aafa19" aria-live="off" lang="nl">
+  <div style="height: 0; width: 0; position: absolute; visibility: hidden">
+    <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="chat-alt" viewBox="0 0 27 23"><title>chat-alt</title><path data-name="icon chat copy" d="M27 8.1a5.11 5.11 0 0 0-.08-.89 4.48 4.48 0 0 0-4.4-3.72H12.23a4.48 4.48 0 0 0-4.11 4.36v5.57a4.56 4.56 0 0 0 1.11 3.06 4.5 4.5 0 0 0 3.61 1.58h6.4a.21.21 0 0 1 .2.1q1.48 1.77 3 3.53l.69.82a3.73 3.73 0 0 0 .31.34.67.67 0 0 0 .41.15H24a.68.68 0 0 0 .35-.43.94.94 0 0 0 0-.38v-.9-3.58l.06-.08A4.46 4.46 0 0 0 27 13.45V8.1zm-7.32 8.27h-6.95a2.83 2.83 0 0 1-2.46-1.22 3 3 0 0 1-.55-1.84v-1.17-3.93a2.89 2.89 0 0 1 2.73-3h9.93a3 3 0 0 1 2.17.91 3 3 0 0 1 .82 2.16v5.34a2.81 2.81 0 0 1-2 2.67.75.75 0 0 0-.59.84v2.46l-1.54-1.82-.85-1a.93.93 0 0 0-.7-.33zm0 .32zM7.13 10.24a.32.32 0 0 0-.31-.32h-.37a1 1 0 0 0-.64.31c-.31.35-.6.71-.9 1.07l-.69.85V10.6a.74.74 0 0 0-.58-.8 2.85 2.85 0 0 1-2-2.64v-2.4a4.07 4.07 0 0 1 .12-1.06 2.83 2.83 0 0 1 2.83-2h6.95a2.82 2.82 0 0 1 2.16.86.31.31 0 0 0 .22.1h1.28a.29.29 0 0 0 .32-.27.29.29 0 0 0 0-.05.31.31 0 0 0-.11-.24 4.1 4.1 0 0 0-3.49-2C9.36 0 6.8 0 4.24 0A4.4 4.4 0 0 0 0 4a25.74 25.74 0 0 0 0 2.79V7a4.48 4.48 0 0 0 2.56 4.16l.06.11V14.93a1 1 0 0 0 0 .25.55.55 0 0 0 .53.51.57.57 0 0 0 .39-.16 2.53 2.53 0 0 0 .3-.34l.52-.63 2.35-2.87.05-.09h.1a.32.32 0 0 0 .28-.32.26.26 0 0 0 0-.09v-1z" fill="#333332"/></symbol><symbol id="chat" viewBox="0 0 19 16.16"><title>chat</title><path d="M5.34 9.2zM5 8.95V4.09A2.14 2.14 0 0 1 7 2h5a2.12 2.12 0 0 0-2-2H7.2C4.93.05 2.91 0 2 0a2.2 2.2 0 0 0-2 2v4.91a2.14 2.14 0 0 0 2 2 1 1 0 0 1 .25.7V12l2.39-2.8A.93.93 0 0 1 5 9zm6.66 2.37zm2 1.68H9a2.25 2.25 0 0 1-2-2.06V6.09A2.14 2.14 0 0 1 9 4h8a2.22 2.22 0 0 1 2 2v5a2.15 2.15 0 0 1-2 2 1 1 0 0 0-.25.71v2.46l-2.39-2.84a.93.93 0 0 0-.7-.33zm0 .32z" opacity=".4" style="isolation:isolate"/></symbol><symbol id="cross" viewBox="0 0 28.84 28.84"><title>cross</title><path d="M26.01 28.84L14.42 17.25 2.83 28.84 0 26.01l11.59-11.59L0 2.83 2.83 0l11.59 11.59L26.01 0l2.83 2.83-11.59 11.59 11.59 11.59-2.83 2.83z"/></symbol><symbol id="login-circle" viewBox="0 0 14 14"><title>login</title><path d="M7 4a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm0 10a7 7 0 0 0 4.65-1.78 6 6 0 0 0-9.3 0A7 7 0 0 0 7 14z"/></symbol><symbol id="question-circle" viewBox="0 0 14 14"><title>question-circle</title><path data-name="copy 2" d="M6.36 9.19l1.55-.42a.72.72 0 0 1-.27-.55C7.64 7.12 10 7 10 5.06 10 3.84 8.87 3 7.06 3A4.11 4.11 0 0 0 4 4.25l1.13 1.2a2.24 2.24 0 0 1 1.72-.81C7.63 4.64 8 5 8 5.38 8 6.28 5.9 6.47 5.9 8a1.66 1.66 0 0 0 .46 1.19zM7 12a1.07 1.07 0 1 0-1.1-1.05A1.11 1.11 0 0 0 7 12z"/></symbol><symbol id="search" viewBox="0 0 63.08 63.05"><title>search</title><path data-name="icon search" d="M26.68 53.32A26.66 26.66 0 1 0 0 26.66a26.66 26.66 0 0 0 26.68 26.66zm0-45.91A19.24 19.24 0 1 1 7.42 26.66 19.24 19.24 0 0 1 26.68 7.41zm32.7 55.64A3.71 3.71 0 0 0 62 56.72L45.54 40.26a3.71 3.71 0 0 0-5.25 5.25L56.75 62a3.71 3.71 0 0 0 2.62 1.09z" style="isolation:isolate"/></symbol><symbol id="up-down" viewBox="0 0 7.03 10.01"><title>up-down</title><path d="M.18 7.17c.25.25 2.83 2.65 2.83 2.65a.68.68 0 0 0 1 0s2.6-2.4 2.84-2.65a.69.69 0 0 0 0-1 .66.66 0 0 0-.93 0L3.5 8.42l-2.36-2.2a.66.66 0 0 0-.93 0 .7.7 0 0 0-.03.95zm6.65-4.3C6.59 2.62 4.01.2 4.01.2a.67.67 0 0 0-1 0S.44 2.62.2 2.87a.7.7 0 0 0 0 1 .65.65 0 0 0 .92 0l2.4-2.26 2.36 2.22a.65.65 0 0 0 .92 0 .7.7 0 0 0 0-1z"/></symbol><symbol id="vlaanderen-logo" viewBox="0 0 19.61 31.05"><title>vlaanderen-logo</title><path data-name="Logo Vlaanderen" d="M19.61 16c-1.08-.82-1.59 0-2.27 0s-1.12-1-1.56-.75c-.85.43.34 2 .86 2.27a12.51 12.51 0 0 0 1.18.59 1.72 1.72 0 0 1 1 1.55 3 3 0 0 1 0 .75c-.31 1.32-2.64 2.52-4 1.61a3 3 0 0 1-1.4-2c-.36-1.73-1.62-3-2-4.7-.25-1-.43-2.12-.7-3.15S10.17 10 9.94 9A27.44 27.44 0 0 0 9 5.92C7.71 2.61 7.14 2.85 7.14 2.85s.46.92 2.15 9A47.8 47.8 0 0 0 10.42 17c.16.42.44 1.32.62 1.72.54 1.16 2 2.92 2.05 4.51.05.92.16 1.68.18 2.37a7.37 7.37 0 0 0 .24 1.4c.35 1 3.14 4.09 6.1 4.09v-2.41a10.88 10.88 0 0 1-5.79-1.82 6.37 6.37 0 0 1 .35-1.7 2.78 2.78 0 0 1 2.39-1.94 17.91 17.91 0 0 1 3 .31V16zM6.82 7.36c-.11 1.77-2.87 4.2-3.73 5.75A11.43 11.43 0 0 0 2 15.95a7.53 7.53 0 0 0 .62 4.67c.91 2.18-.12 3 .59 2.54.88-.72.75-2.39.68-3.43a14.77 14.77 0 0 1 0-2.82 13.29 13.29 0 0 1 2.41-5.33 4.84 4.84 0 0 0 .52-4.22m.56 5s.29 1.4-1 5c-3.26 9.45 3 10.34 4.74 12.56 0 0 .69-1-2.14-4-1-1.12-2-3.6-1.15-7.15 1.17-5.13-.5-6.39-.5-6.39M1.21 6.2A4.53 4.53 0 0 1 1 4.7c.2-2.22 2.23-3.12 2.73-3.45A2.7 2.7 0 0 0 4.76 0a3 3 0 0 1-1.21 3.67A6.06 6.06 0 0 0 1.21 6.2m5.11-2.15c.11.23 1 1.45-2.48 4.27s-2.36 4.84-2.36 4.84-3.66-2 .56-5.53 3.35-4.2 3.35-4.2a1.05 1.05 0 0 1 .93.63m4.46 1.08c.59.08 1 1.92 2.35 2.32 1 .29 2.08.13 2.32.74a.52.52 0 0 0 .37.92c.39-1.12.58-5.24-5.03-3.98zm1.86.86c0-.13.12 0 .27-.12a1.66 1.66 0 0 1 .59-.48 1 1 0 0 1 .62 0c.12 0 0 .33 0 .4s-.74-.09-.74.32c0 .67.91 0 1.38 0 .23 1.64-2.48 1.19-2.08-.16z"/></symbol><symbol id="warning" viewBox="0 0 22.03 20"><title>warning</title><path data-name="icon warning" d="M3.06 20.01a5.83 5.83 0 0 1-1-.09 2.25 2.25 0 0 1-1.91-3.08 4.91 4.91 0 0 1 .42-.92c0-.15 8-14 8.06-14.16A4.86 4.86 0 0 1 9.51.62a2.16 2.16 0 0 1 3 0 4.37 4.37 0 0 1 .84 1c-.07 0 8.14 14.36 8.12 14.28a4.36 4.36 0 0 1 .54 1.46 2.32 2.32 0 0 1-2.48 2.65c-1.32.05-.64 0-2 0H3.06zm16-1.34a3.66 3.66 0 0 0 .7 0 .94.94 0 0 0 .8-1.33 4.13 4.13 0 0 0-.36-.75c-.57-1-8.07-14.14-8.1-14.24-.72-1-1.34-1-2.1 0 0 .05-8.22 14.29-8.17 14.36-.82 1.3-.36 1.93 1.18 1.94h16zm-9-12h2v6h-2.05v-6zm-.05 9.34v-2h2v2h-2z"/></symbol></svg>
+  </div>
+  <div class="iwgh3 js-iw3-widget-element iw3-no-js">
+    <div class="iwgh3__alerts">
+      <noscript>
+        <div data-name="no-script" class="iwgh3__alert">
+          <div class="iwgh3__alert__wrapper">
+            <div class="iwgh3__alert__icon">
+              <svg class="iwgh3__alert__icon__img">
+                <use xlink:href="#warning" />
+              </svg>
+            </div>
+            <div class="iwgh3__alert__content">
+              <div class="iwgh3__alert__text">Om de website optimaal te bekijken in uw browser, schakelt u best Javascript in.</div>
+            </div>
+          </div>
+        </div>
+      </noscript>
+      <!--[if lt IE 9]>
+        <div data-name="browser-error" class="iwgh3__alert">
+          <div class="iwgh3__alert__wrapper">
+            <div class="iwgh3__alert__icon">
+              <svg class="iwgh3__alert__icon__img">
+                <use xlink:href="#warning" />
+              </svg>
+            </div>
+            <div class="iwgh3__alert__content">
+              <div class="iwgh3__alert__text">De huidige versie van uw browser is verouderd. Om de website optimaal te bekijken, installeert u best een recente versie.</div>
+            </div>
+          </div>
+        </div>
+      <![endif]-->
+    </div>
+    <div class="iwgh3__placeholder js-iwgh3-placeholder">
+      <div class="layout layout--wide"><div class="js-iwgh3-layout-calc"></div></div>
+
+      <div class="iwgh3__top-bar js-iwgh3-bar">
+        <a href="https://www.vlaanderen.be/nl" class="iwgh3__home-link" target="_self">
+          <div class="iwgh3__logo">
+            <svg class="iwgh3__logo__img">
+              <use xlink:href="#vlaanderen-logo" />
+            </svg>
+          </div>
+          <div class="iwgh3__label">Vlaanderen</div>
+        </a>
+        <form novalidate class="iwgh3__search js-iwgh3__search" action="https://www.vlaanderen.be/nl/search" method="get" data-default-placeholder="Zoeken">
+          <label class="iwgh3__search__label js-iwgh3__search__label" id="iwgh3-search-label" for="keyword" onclick="">
+            <span>Zoekterm</span>
+            <svg class="iwgh3__search__img">
+              <use xlink:href="#search" />
+            </svg>
+          </label>
+          <div class="iwgh3__search__form-wrapper">
+            <input type="search" autocomplete="off" placeholder="Zoeken" class="iwgh3__search__input js-iwgh3__search__input" name="keyword" id="keyword" required/>
+            <button type="submit" class="iwgh3__search__submit" id="iwgh3-search-submit">
+              <span>Zoeken</span>
+              <svg class="iwgh3__search__submit__img">
+                <use xlink:href="#search" />
+              </svg>
+            </button>
+          </div>
+        </form>
+        <div class="iwgh3__extensions">
+                    <div class="iwgh3__extension iwgh3__extension--contact js-iwgh3-contact-extension" data-show-menu-help="Toon menu" data-hide-menu-help="Verberg menu">
+            <a class="iwgh3__extension__link iwgh3__contact-toggle js-iwgh3-contact-toggle" href="https://www.vlaanderen.be/nl/node/214549" target="_self" data-label="Contacteer ons">
+              <span class="iwgh3-visually-hidden js-iwgh3-help-text"></span>
+              <span class="js-iwgh3-label">Contacteer ons</span>
+              <div class="iwgh3__extension__link__icon-wrapper">
+                <div class="iwgh3__extension__link__icon iwgh3__extension__link__icon--default">
+                  <svg class="iwgh3__extension__link__icon__img">
+                    <use xlink:href="#question-circle" />
+                  </svg>
+                </div>
+                <div class="iwgh3__extension__link__icon iwgh3__extension__link__icon--chat">
+                  <svg class="iwgh3__extension__link__icon__img">
+                    <use xlink:href="#chat" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <div class="iwgh3__contact--wrapper">
+              <div class="iwgh3__window js-iwgh3-contact-menu js-iwgh3-window-closed iwgh3-menu-no-items">
+                <div class="iwgh3__window__content">
+                  <div class="js-iwgh3-window-main iwgh3__window__main" tabindex="-1">
+                    <div class="js-iwgh3-contact-menu-header iwgh3__window__header iwgh3-hidden">
+                      <span class="js-iwgh3-menu-item-title"></span>
+                    </div>
+                    <ul class="js-iwgh3-menu-items iwgh3__contact__items"></ul>
+                  </div>
+                  <div class="js-iwgh3-mail-detail-window iwgh3__window__detail" tabindex="-1">
+                    <div class="iwgh3__window__header">
+                      <a class="iwgh3__window__detail__close js-iwgh3__window__detail__close" href="javascrip:;">Terug naar overzicht</a>
+                      <span>Stuur een e-mail</span>
+                    </div>
+                    <form class="js-iwgh3-mail-form iwgh3__contact__mail iwgh3__form iwgh3__window__body" novalidate="" method="post" action="javascript:;" data-title="Stuur een e-mail" data-mail-form-url="https://www.vlaanderen.be/nl/siebel_chat/email_submit">
+                      <input id="iwgh3-mail-form-url-page" name="url_page" type="hidden" value=""/>
+                      <p class="iwgh3__form__intro">Stuur een e-mail naar 1700, de informatiedienst voor al uw vragen aan de overheid.<br/>U ontvangt een kopie van uw bericht.</p>
+                      <div>
+                        <div class="iwgh3__form__row js-iwgh3__form__row">
+                          <div class="iwgh3-labeled-input">
+                            <input id="iwgh3-mail-form-first-name" class="iwgh3-input-field iwgh3-input-field--block iwgh3-labeled-input__input-field" aria-required="true" aria-invalid="false" required data-error-field-mandatory="Dit veld is verplicht" type="text" name="first_name"/>
+                            <label for="iwgh3-mail-form-first-name" class="iwgh3-labeled-input__label">Voornaam</label>
+                          </div>
+                          <span id="iwgh3-mail-form-first-name-error" class="iwgh3__form__error js-iwgh3__form__error"></span>
+                        </div>
+                        <div class="iwgh3__form__row js-iwgh3__form__row">
+                          <div class="iwgh3-labeled-input">
+                            <input id="iwgh3-mail-form-last-name" class="iwgh3-input-field iwgh3-input-field--block iwgh3-labeled-input__input-field" aria-required="true" aria-invalid="false" required="" data-error-field-mandatory="Dit veld is verplicht" type="text" name="last_name"/>
+                            <label for="iwgh3-mail-form-last-name" class="iwgh3-labeled-input__label">Naam</label>
+                          </div>
+                          <span id="iwgh3-mail-form-last-name-error" class="iwgh3__form__error js-iwgh3__form__error"></span>
+                        </div>
+                        <div class="iwgh3__form__row js-iwgh3__form__row">
+                          <div class="iwgh3-labeled-input">
+                            <input id="iwgh3-mail-form-email-address" class="iwgh3-input-field iwgh3-input-field--block iwgh3-labeled-input__input-field js-iwgh3-labeled-input-field" aria-required="true" aria-invalid="false" required="" data-error-field-mandatory="Dit veld is verplicht" data-error-invalid-email-address="Vul een correct e-mail adres in" type="email" name="email_address"/>
+                            <label for="iwgh3-mail-form-email-address" class="iwgh3-labeled-input__label">E-mailadres</label>
+                          </div>
+                          <span id="iwgh3-mail-form-email-address-error" class="iwgh3__form__error js-iwgh3__form__error"></span>
+                        </div>
+                        <div class="iwgh3__form__row js-iwgh3__form__row">
+                          <div class="iwgh3-labeled-input">
+                            <textarea id="iwgh3-mail-form-question" class="iwgh3-textarea iwgh3-textarea--block iwgh3-labeled-input__input-field" aria-required="true" aria-invalid="false" required="" data-error-field-mandatory="Dit veld is verplicht" name="question" cols="40" rows="4"></textarea>
+                            <label for="iwgh3-mail-form-question" class="iwgh3-labeled-input__label">Bericht</label>
+                          </div>
+                          <span id="iwgh3-mail-form-question-error" class="iwgh3__form__error js-iwgh3__form__error"></span>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="iwgh3__window__footer iwgh3__window__footer--bordered">
+                      <input type="button" value="Verstuur" data-send-text="Verstuur" data-sending-text="Verzenden" class="iwgh3-button js-iwgh3-mail-detail-window-submit"/>
+                    </div>
+                    <div class="js-iwgh3-mail-form-confirmation iwgh3__window__body" data-title="Bedankt voor uw bericht" style="display:none;">
+                      <a class="iwgh3__window__detail__close js-iwgh3__window__detail__close" href="javascrip:;">Terug naar overzicht</a>
+                      <div class="iwgh3-notification iwgh3-notification--success">
+                        <span>U krijgt een antwoord van 1700 binnen maximaal 2 werkdagen.</span>
+                      </div>
+                    </div>
+                    <div class="js-iwgh3-mail-form-error iwgh3__window__body" data-title="Probleem bij verzenden" style="display:none;">
+                      <a class="iwgh3__window__detail__close js-iwgh3__window__detail__close" href="javascrip:;">Terug naar overzicht</a>
+                      <div class="iwgh3-notification iwgh3-notification--error">
+                        <span>Het bericht werd niet verzonden door een technisch probleem. Probeer het later opnieuw.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="js-iwgh3-chat-detail-window iwgh3__window__detail" tabindex="-1" data-label-agent-says="1700 zegt" data-label-client-says="Ik zeg">
+                    <div class="iwgh3__window__header">
+                      <a class="iwgh3__window__detail__close js-iwgh3__window__detail__close" href="javascrip:;">Terug naar overzicht</a>
+                      <span>Chat met ons</span>
+                    </div>
+                    <div class="iwgh3__window__body">
+
+                      <div>
+                        <!-- Chat pre queue -->
+                        <div class="iwgh3-infolijn-action-chat--pre-queue iwgh3-infolijn-action-chat--pre-queue-js">
+                          <div class="iwgh3-detail-row">
+                            Uw chatgesprek wordt automatisch gestart, zodra er een 1700-medewerker beschikbaar is.
+                          </div>
+                          <div  class="iwgh3-detail-row">
+                            <div class="iwgh3-notification iwgh3-notification--alert">
+                              Even geduld, uw positie in de wachtrij wordt bepaald.
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Chat waiting -->
+                        <form class="iwgh3-infolijn-action-chat--queue iwgh3-infolijn-action-chat--queue-js"  data-label-queue-position-singular="Er is nog 1 wachtende voor u." data-label-queue-position-plural="Er zijn nog {{queue.position}} wachtenden voor u." style="display:none" novalidate="novalidate">
+                          <div class="iwgh3-detail-row">
+                            Uw chatgesprek wordt automatisch gestart, zodra er een 1700-medewerker beschikbaar is.
+                          </div>
+                          <div  class="iwgh3-detail-row">
+                            <div class="iwgh3-notification iwgh3-notification--alert iwgh3-queue-position-placeholder-js"></div>
+                          </div>
+                          <div class="iwgh3-u-text-right">
+                            <button type="submit"  class="iwgh3-reset-button iwgh3-link">Verlaat wachtrij</button>
+                          </div>
+                        </form>
+                        <!-- Chat post queue -->
+                        <div class="iwgh3-infolijn-action-chat--post-queue iwgh3-infolijn-action-chat--post-queue-js" style="display:none">
+                          <div class="iwgh3-detail-row">
+                            Uw chatgesprek wordt automatisch gestart, zodra er een 1700-medewerker beschikbaar is.
+                          </div>
+                          <div  class="iwgh3-detail-row">
+                            <div class="iwgh3-notification iwgh3-notification--alert">
+                              Even geduld, uw gesprek wordt zo snel mogelijk gestart.
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Chat success -->
+                        <div class="iwgh3-chat-window iwgh3-infolijn-action-chat--success-js" style="display:none">
+                          <div class="iwgh3-chat-window__content iwgh3-chat-window__content-js">
+                            <!-- Filled by Javascript -->
+                          </div>
+
+                        </div>
+                        <!-- Chat ended -->
+                        <div class="iwgh3-infolijn-action-chat--ended iwgh3-infolijn-action-chat--ended-js" style="display:none">
+                          <div class="iwgh3-detail-row">
+                            <div class="iwgh3-notification iwgh3-notification--success">
+                              Het gesprek met een medewerker van 1700 werd beeïndigd.
+                            </div>
+                          </div>
+                          <div class="iwgh3-u-text-right iwgh3-detail-row iwgh3-infolijn-action-chat-download-transcript-container-js" data-label-download-transcript="Gesprek downloaden" style="display:none"></div>
+                        </div>
+                        <!-- Chat recoverable error -->
+                        <div class="iwgh3-infolijn-action-chat--error iwgh3-infolijn-action-chat--recoverable-error-js" style="display:none" novalidate="novalidate">
+                          <div class="iwgh3-detail-row">
+                            <div class="iwgh3-notification iwgh3-notification--error">
+                              We ondervinden connectiviteitsproblemen, controleer of u nog een stabiele verbinding heeft met het internet.
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Chat fatal error -->
+                        <div class="iwgh3-infolijn-action-chat--error iwgh3-infolijn-action-chat--fatal-error-js" style="display:none">
+                          <div class="iwgh3-detail-row">
+                            <div class="iwgh3-notification iwgh3-notification--error">
+                              Uw aanvraag kan niet verwerkt worden door een technisch probleem.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="iwgh3__window__footer" style="display:none">
+                      <div class="iwgh3-chat-window__footer">
+                        <form class="iwgh3-contact-chat-send-message-js" novalidate="novalidate">
+                          <label for="message" class="iwgh3-label">Bericht:</label>
+                          <input name="message" class="iwgh3-input-field iwgh3-input-field--block iwgh3-chat-window-message-js" type="text" autocomplete="off" placeholder="Klik om te typen"/>
+                          <button type="submit" class="iwgh3-chat-window__send-button"></button>
+                        </form>
+                        <form class="iwgh3-panel__header iwgh3-contact-panel__header iwgh3-contact-chat__close iwgh3-contact-chat-close-conversation-js" novalidate="novalidate">
+                          <button type="submit" class="iwgh3-reset-button iwgh3-panel__close iwgh3-panel__close--close iwgh3-contact-section-toggle">Verlaat gesprek</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="iwgh3__progress js-iwgh3__progress"></div>
+      </div>
+      <nav class="iwgh3__breadcrumb js-iwgh3-bc iwgh3-hidden" data-show-menu-help="Toon navigatie menu" data-hide-menu-help="Verberg navigatie menu" data-expand-breadcrumbs-help="Expand hidden breadcrumbs" data-label-close="Sluiten">
+        <span class="iwgh3-visually-hidden">U bent hier:</span>
+        <ul></ul>
+      </nav>
+    </div>
+    <div class="iwgh3__popup-notifications js-iwgh3-popup-notifications" data-label-close="Sluiten">
+      <ul><!-- Filled by JS --></ul>
+    </div>
+  </div>
+</div>
+    
+                <header class="banner banner--large banner--has-picture banner--has-title banner--has-buttons"><picture >
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="https://d201gzvprbtpxy.cloudfront.net/sites/default/files/styles/page_banner_wide_alt/public/images/header_404_0.jpg?itok=_j3UHF9q&amp;timestamp=1386972736 1x" media="(min-width: 1024px)" />
+<source srcset="https://d201gzvprbtpxy.cloudfront.net/sites/default/files/styles/page_banner_mobile_alt/public/images/header_404_0.jpg?itok=EK5LHAWP&amp;timestamp=1386972736 1x" media="(max-device-width: 767px)" />
+<source srcset="https://d201gzvprbtpxy.cloudfront.net/sites/default/files/styles/page_banner_narrow/public/images/header_404_0.jpg?itok=WALisFTJ&amp;timestamp=1386972736 1x" media="(max-width: 1023px)" />
+<!--[if IE 9]></video><![endif]-->
+<img  src="https://d201gzvprbtpxy.cloudfront.net/sites/default/files/styles/page_banner_wide_alt/public/images/header_404_0.jpg?itok=_j3UHF9q&amp;timestamp=1386972736" alt="" title="" />
+</picture><div class="layout layout--wide"><hgroup class="banner__content"><h1 class="banner__title"><span class="banner__title__content">Welkom bij data.vlaanderen.be</span></h1></hgroup><div class="banner__buttons"><div class="banner__button banner__button--cart"><div class="ebl-shop-cart ebl-shop-cart-empty"></div></div></div></div></header>    
+  
+  <div id="main" itemprop="mainContentOfPage" role="main" tabindex="-1" class="main-content">
+
+            <!-- RSPEAK_START -->
+                                
+    
+    
+    
+    
+                  
+
+  
+  
+                  <div class="region region--no-space-bottom">
+      
+                  <div class="layout layout--wide">
+        
+          
+          
+                                    <div class="grid">
+            
+              
+              
+                                                <div class="col--8-12 col--12-12--m">
+                                                        <div class="content u-spacer typography">
+<p>Welkom bij data.vlaanderen.be. </p
+</div>                                                    </div>
+                              
+              
+              
+                          </div>
+                      
+          
+                  </div>
+        
+              </div>
+          
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+
+    
+    
+          <!-- RSPEAK_STOP -->
+
+  </div>
+
+                <div class="iwgf3__placeholder" id="a5ffad2d44cf6c7fe7e06240b0647387f797e6df">
+  <footer class="js-iwgf3-window-closed iwgf3 js-iw3-widget-element iw3-no-js iw3-window-closed" aria-live="off" role="contentinfo" lang="nl">
+    <div class="iwgf3__popup-notifications js-iwgf3-popup-notifications" data-label-close="Sluiten">
+      <ul><!-- Filled by JS --></ul>
+    </div>
+    <div class="iwgf3-widget-trays">
+      <ul><!-- Filled by JS --></ul>
+    </div>
+    <div class="iwgf3__content">
+      <div class="iwgf3__logo">
+        <svg class="iwgf3__logo__img">
+          <use xlink:href="#vlaanderen-logo" />
+        </svg>
+        <div class="iwgf3__logo__text">
+          <div class="iwgf3__logo__title">Vlaanderen</div>
+          <div class="iwgf3__logo__tagline">verbeelding werkt</div>
+        </div>
+      </div>
+      <div class="iwgf3__site-info">
+        <h2 class="iwgf3__site-info__title">Vlaanderen.be is de officiële website van de Vlaamse overheid</h2>
+                <div class="iwgf3__site-info__publisher">
+          <span>uitgegeven door</span>
+                    <span itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+                        <a class="iwgf3__site-info__publisher__link" itemprop="url" href="https://www.vlaanderen.be/nl/contact/adressengids/diensten-van-de-vlaamse-overheid/administratieve-diensten-van-de-vlaamse-overheid/beleidsdomein-kanselarij-en-bestuur/agentschap-informatie-vlaanderen" target="_self">
+              <span itemprop="name">Agentschap Informatie Vlaanderen</span>
+            </a>
+                      </span>
+                                      </div>
+        
+        <div class="iwgf3__contact-us js-iwgf3-contact-us">
+          <a class="iwgf3__contact-us__link js-iwgf3-contact-toggle-show iwgf3-exclude-from-outbound-link-tracking" href="https://www.vlaanderen.be/nl/node/214549" target="_self" data-show-menu-help="Toon menu" data-hide-menu-help="Verberg menu">
+            <span><span class="iw3-visually-hidden iwgf3-help-text"></span>Contacteer ons</span>
+            <div class="iwgf3__contact-us__link__icon">
+              <svg class="iwgf3__contact-us__link__icon__img">
+                <use xlink:href="#question-circle" />
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <div class="iwgf3__navigation">
+          <ul class="js-iwgf3-navigation-list iwgf3__navigation__list"></ul>
+        </div>
+      </div>
+
+      <div class="iwgf3-languages iwgf3__languages">
+        <ul class="iwgf3-menu-items iwgf3-menu-no-items iwgf3__languages-list js-iwgf3-languages-list"></ul>
+      </div>
+    </div>
+
+    <div class="iwgf3__windows">
+      <div class="js-iwgf3-window-closed iwgf3-window iwgf3-window-contact iwgf3__window" tabindex="-1">
+        <div class="iwgf3-window-wrapper iwgf3-window-contact-wrapper">
+          <div class="iwgf3-window-header iwgf3__window__header">
+            <a class="iwgf3-window-close iwgf3-exclude-from-outbound-link-tracking iwgf3__window__close-button" href="javascript:;">
+              <span>Sluiten</span>
+            </a>
+          </div>
+          <div class="iwgf3-window-content" tabindex="-1">
+            <ul class="iwgf3-menu-items iwgf3-menu-no-items iwgf3__window__menu-items" tabindex="-1"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="js-iwgf3-window-closed iwgf3-window iwgf3-window-chat iwgf3__window" tabindex="-1" data-label-agent-says="1700 zegt" data-label-client-says="Ik zeg">
+        <div class="iwgf3-window-wrapper iwgf3-window-chat-wrapper">
+          <div class="iwgf3-window-header iwgf3__window__header">
+            <a class="iwgf3-window-close iwgf3-exclude-from-outbound-link-tracking iwgf3__window__close-button" href="javascript:;">
+              <span>Sluiten</span>
+            </a>
+          </div>
+          <div class="iwgf3-window-content" tabindex="-1">
+            <!-- Chat pre queue -->
+            <div class="iwgf3-infolijn-action-chat--pre-queue iwgf3-infolijn-action-chat--pre-queue-js">
+              <div class="iwgf3-detail-row">
+                Uw chatgesprek wordt automatisch gestart, zodra er een 1700-medewerker beschikbaar is.
+              </div>
+              <div  class="iwgf3-detail-row">
+                <div class="iwgf3-notification iwgf3-notification--alert">
+                  Even geduld, uw positie in de wachtrij wordt bepaald.
+                </div>
+              </div>
+            </div>
+            <!-- Chat waiting -->
+            <form class="iwgf3-infolijn-action-chat--queue iwgf3-infolijn-action-chat--queue-js"  data-label-queue-position-singular="Er is nog 1 wachtende voor u." data-label-queue-position-plural="Er zijn nog {{queue.position}} wachtenden voor u." style="display:none" novalidate="novalidate">
+              <div class="iwgf3-detail-row">
+                Uw chatgesprek wordt automatisch gestart, zodra er een 1700-medewerker beschikbaar is.
+              </div>
+              <div  class="iwgf3-detail-row">
+                <div class="iwgf3-notification iwgf3-notification--alert iwgf3-queue-position-placeholder-js"></div>
+              </div>
+              <div class="iwgf3-u-text-right">
+                <button type="submit"  class="iwgf3-reset-button iwgf3-link">Verlaat wachtrij</button>
+              </div>
+            </form>
+            <!-- Chat post queue -->
+            <div class="iwgf3-infolijn-action-chat--post-queue iwgf3-infolijn-action-chat--post-queue-js" style="display:none">
+              <div class="iwgf3-detail-row">
+                Uw chatgesprek wordt automatisch gestart, zodra er een 1700-medewerker beschikbaar is.
+              </div>
+              <div  class="iwgf3-detail-row">
+                <div class="iwgf3-notification iwgf3-notification--alert">
+                  Even geduld, uw gesprek wordt zo snel mogelijk gestart.
+                </div>
+              </div>
+            </div>
+            <!-- Chat success -->
+            <div class="iwgf3-chat-window iwgf3-infolijn-action-chat--success-js" style="display:none">
+              <div class="iwgf3-chat-window__content iwgf3-chat-window__content-js">
+                <!-- Filled by Javascript -->
+              </div>
+              <div class="iwgf3-chat-window__footer">
+                <form class="iwgf3-contact-chat-send-message-js" novalidate="novalidate">
+                  <label for="message" class="iwgf3-label">Bericht:</label>
+                  <input name="message" class="iwgf3-input-field iwgf3-input-field--block iwgf3-chat-window-message-js" type="text" autocomplete="off" placeholder="Klik om te typen"/>
+                  <button type="submit" class="iwgf3-chat-window__send-button"></button>
+                </form>
+                <form class="iwgf3-panel__header iwgf3-contact-panel__header iwgf3-contact-chat__close iwgf3-contact-chat-close-conversation-js" novalidate="novalidate">
+                  <button type="submit" class="iwgf3-reset-button iwgf3-panel__close iwgf3-panel__close--close iwgf3-contact-section-toggle">Verlaat gesprek</button>
+                </form>
+              </div>
+            </div>
+            <!-- Chat ended -->
+            <div class="iwgf3-infolijn-action-chat--ended iwgf3-infolijn-action-chat--ended-js" style="display:none">
+              <div class="iwgf3-detail-row">
+                <div class="iwgf3-notification iwgf3-notification--success">
+                  Het gesprek met een medewerker van 1700 werd beeïndigd.
+                </div>
+              </div>
+              <div class="iwgf3-u-text-right iwgf3-detail-row iwgf3-infolijn-action-chat-download-transcript-container-js" data-label-download-transcript="Gesprek downloaden" style="display:none"></div>
+            </div>
+            <!-- Chat recoverable error -->
+            <div class="iwgf3-infolijn-action-chat--error iwgf3-infolijn-action-chat--recoverable-error-js" style="display:none" novalidate="novalidate">
+              <div class="iwgf3-detail-row">
+                <div class="iwgf3-notification iwgf3-notification--error">
+                  We ondervinden connectiviteitsproblemen, controleer of u nog een stabiele verbinding heeft met het internet.
+                </div>
+              </div>
+            </div>
+            <!-- Chat fatal error -->
+            <div class="iwgf3-infolijn-action-chat--error iwgf3-infolijn-action-chat--fatal-error-js" style="display:none">
+              <div class="iwgf3-detail-row">
+                <div class="iwgf3-notification iwgf3-notification--error">
+                  Uw aanvraag kan niet verwerkt worden door een technisch probleem.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+    </div>
+
+  <noscript>
+    <div id="noscript" class="browserError">
+      <div class="layout layout--wide">
+        <div class="layout__wrapper">
+          <span>Om de website optimaal te bekijken in uw browser, schakelt u best Javascript in.</span>
+        </div>
+      </div>
+    </div>
+  </noscript>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="https://d201gzvprbtpxy.cloudfront.net/sites/default/files/js/js_VSPlJIlTIyafMfHC8FcciwIoaKKD1la6iQ8I5deJ6g4.js"></script>
+<script type="text/javascript" src="https://widgets.vlaanderen.be/modules/custom/infolijn_widget/assets/libraries/html5shiv/3.7.0/html5shiv.min.js?mtime=1464028444"></script>
+<script type="text/javascript" src="https://widgets.vlaanderen.be/modules/custom/widget/assets/js/widget_api.min.js?mtime=1478192861"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://d201gzvprbtpxy.cloudfront.net/sites/default/files/js/js_iRz8p3iKIPrjDAOi-gk4L722NW7-PFAPHfEatQp91NM.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-32317403-1", {"cookieDomain":"auto"});ga("set", "page", "/404.html?page=" + document.location.pathname + document.location.search + "&from=" + document.referrer);var contentGroup2 = "Detail";ga("set", "contentGroup2", contentGroup2);var externalReferenceId = "2000000458662";ga("set", "dimension1", externalReferenceId);ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://d201gzvprbtpxy.cloudfront.net/sites/default/files/js/js_iabUUfrCd7JJBJynhm6rL76dDf5XiIe_zdpXiKY79Tc.js"></script>
+<script type="text/javascript" src="https://d201gzvprbtpxy.cloudfront.net/sites/default/files/js/js_-o5thsnFsQk5_CuXwzqkt5LagAf3LbmGOdrB2ii0MC4.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"nl\/","ajaxPageState":{"theme":"portal_q2_2016","theme_token":"ReWpQjH4tmCaxxMupzvS1vvgdLQwgXkcUbuuR4dMRl0","js":{"\/\/widgets.vlaanderen.be\/widget\/live\/2\/smart_ssi_bootstrap.js":1,"\/\/widgets.vlaanderen.be\/widget\/live\/5\/smart_ssi_bootstrap.js":1,"sites\/all\/modules\/custom\/infolijn_google_analytics\/js\/infolijn_google_analytics_infolijn_portal.js":1,"sites\/all\/modules\/contrib\/picture\/picturefill2\/picturefill.min.js":1,"sites\/all\/modules\/contrib\/picture\/picture.min.js":1,"0":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.11\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/forcejs\/forcejs.js":1,"\/\/widgets.vlaanderen.be\/modules\/custom\/infolijn_widget\/assets\/libraries\/html5shiv\/3.7.0\/html5shiv.min.js?mtime=1464028444":1,"\/\/widgets.vlaanderen.be\/modules\/custom\/widget\/assets\/js\/widget_api.min.js?mtime=1478192861":1,"1":1,"public:\/\/languages\/nl_FPRLwpFLyi8yEwodDZ23r0bRKf6gTYxiZQOlJJ12nqA.js":1,"sites\/all\/modules\/custom\/infolijn_google_analytics\/js\/infolijn_google_analytics_widgets.js":1,"sites\/all\/modules\/custom\/infolijn_google_analytics\/js\/infolijn_google_analytics.js":1,"sites\/all\/libraries\/chosen\/chosen.jquery.min.js":1,"sites\/all\/modules\/custom\/ip_main\/js\/ip_main.js":1,"sites\/all\/libraries\/json2\/json2.min.js":1,"sites\/all\/libraries\/jquery.cookies\/jquery.cookies.min.js":1,"sites\/all\/modules\/custom\/ebl_shop\/js\/ebl_shop.min.js":1,"2":1,"sites\/all\/modules\/custom\/ip_portal_domains\/js\/ip_portal_domains_gh.js":1,"sites\/all\/modules\/contrib\/widget_block\/js\/widget_block.js":1,"sites\/all\/themes\/portal_q2_2016\/js\/jquery.easing.min.js":1,"sites\/all\/themes\/portal_q2_2016\/js\/jquery.fs.picker.min.js":1,"sites\/all\/themes\/portal_q2_2016\/js\/jquery.numeric.js":1,"sites\/all\/themes\/portal_q2_2016\/js\/jquery.placeholder.js":1,"sites\/all\/themes\/portal_q2_2016\/js\/jquery.inview.min.js":1,"sites\/all\/themes\/portal_q2_2016\/js\/jquery.visible.min.js":1,"sites\/all\/themes\/portal_q2_2016\/js\/scripts.js":1},"css":{"\/\/widgets.vlaanderen.be\/modules\/custom\/infolijn_widget\/assets\/libraries\/FlemishAuthorities.InfolijnWidget.GlobalHeader\/3.0.0\/GlobalHeader.css?mtime=1477425163":1,"\/\/widgets.vlaanderen.be\/modules\/custom\/infolijn_widget\/assets\/libraries\/FlemishAuthorities.InfolijnWidget.GlobalFooter\/3.0.0\/GlobalFooter.css?mtime=1477425163":1}},"infolijn_google_analytics":{"language":"nl"},"ebl_shop":{"checkout_url":"http:\/\/ebl.vlaanderen.be\/ebl\/remote\/b7a7f87916c1791f6e389bbb6e747a42\/cart\/checkout","bo_domain":"ebl.vlaanderen.be","shop_token":"b7a7f87916c1791f6e389bbb6e747a42","lang":"nl"},"ip_portal_domains_gh":{"breadcrumb":[{"type":"text","label":"We vinden de pagina niet ..."}],"topLevel":0},"WidgetBlock":{"currentLanguage":"nl"},"urlIsAjaxTrusted":{"\/nl\/hottentottentententenoostellingensruimtes":true},"clientsideValidation":{"general":{"months":{"januari":1,"jan":1,"februari":2,"feb":2,"maart":3,"mrt":3,"april":4,"apr":4,"mei":5,"juni":6,"jun":6,"juli":7,"jul":7,"augustus":8,"aug":8,"september":9,"sep":9,"oktober":10,"okt":10,"november":11,"nov":11,"december":12,"dec":12}}}});
+//--><!]]>
+</script>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/www.vlaanderen.be\/nl","potentialAction":{"@type":"SearchAction","target":"http:\/\/www.vlaanderen.be\/nl\/search?keyword={search_term_string}","query-input":"required name=search_term_string"}}</script>  <script src="https://dij151upo6vad.cloudfront.net/1.latest/js/vlaanderen-ui.js" async defer></script>
+  <script type="text/javascript" src="https://widgets.vlaanderen.be/widget/live/2/smart_ssi_bootstrap.js"></script>
+<script type="text/javascript" src="https://widgets.vlaanderen.be/widget/live/5/smart_ssi_bootstrap.js"></script>
+<script type="text/javascript" src="https://d201gzvprbtpxy.cloudfront.net/sites/default/files/js/js_EkwKFwQ2yK-El52tOUc7fnl-YgimJuqOkLHtEWs4Ct8.js"></script>
+<script type="text/javascript" src="https://d201gzvprbtpxy.cloudfront.net/sites/default/files/js/js_7Ukqb3ierdBEL0eowfOKzTkNu-Le97OPm-UqTS5NENU.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+//--><!]]>
+</script>
+</body>
+</html>
