@@ -10,63 +10,18 @@ urldecode() {
 
 
 echo "Content-type: text/html"
-echo "Status: $REDIRECT_STATUS Condition Intercepted"
+echo "Status: $REDIRECT_STATUS NOT FOUND"
 echo ""
-echo '<html>'
-echo '<head>'
-echo '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">'
-echo '<title>Error</title>'
-echo '</head>'
-echo '<body>'
 
-## Save the old internal field separator.
-#  OIFS="$IFS"
-## Set the field separator to & and parse the QUERY_STRING at the ampersand.
-#  IFS="${IFS}&"
-#  set $QUERY_STRING
-#  Args="$*"
-#  IFS="$OIFS"
-# 
-## Next parse the individual "name=value" tokens.
-# 
-#  ARGX=""
-#  ARGY=""
-#  ARGZ=""
-# 
-#  for i in $Args ;do
-# 
-##       Set the field separator to =
-#	IFS="${OIFS}="
-#	set $i
-#	IFS="${OIFS}"
-# 
-#	case $1 in
-#		# Don't allow "/" changed to " ". Prevent hacker problems.
-#		uri) ErroneousURI="`echo $2 | sed 's|[\]||g' | sed 's|%20| |g'`"
-#		       ;;
-#		# Filter for "/" not applied here
-#		namey) ARGY="`echo $2 | sed 's|%20| |g'`"
-#		       ;;
-#		namez) ARGZ="${2/\// /}"
-#		       ;;
-#		*)     echo "<hr>Warning:"\
-#			    "<br>Unrecognized variable \'$1\' passed by FORM in QUERY_STRING.<hr>"
-#		       ;;
-# 
-#	esac
-#  done
-#
-#
-#LOCAL=$(urldecode $ErroneousURI)
-#echo "http://data.vlaanderen.be/$LOCAL"
+cat /scripts/404-nonfound-before.html
 
-
-echo "Deze uri: "
+echo "<p>Deze uri: "
 echo "http://data.vlaanderen.be$REDIRECT_URL"
 echo " voldoet niet aan de VO URI strategie."
-echo "\n"
+echo "</p><br/>"
 
-echo "Oorzaak is "
+
+echo "<p>Oorzaak is "
 case $REDIRECT_errorUriScheme in
    0) echo "onbekende categorie"
       ;;
@@ -85,21 +40,8 @@ case $REDIRECT_errorUriScheme in
    *) echo "onbekende oorzaak"
       ;;
 esac
+echo "</p>"
 
-#echo "$HTTP_REFERER"
-#echo "--"
-#echo "$REDIRECT_URL"
-#echo "--"
-#echo "$REQUEST_URI"
-#echo "--"
-#echo "$REDIRECT_errorUriScheme" 
-#
-#
-
-#echo "------------------------\n"
-#env
-
-echo '</body>'
-echo '</html>'
+cat /scripts/nonfound-after.html
  
 exit 0
