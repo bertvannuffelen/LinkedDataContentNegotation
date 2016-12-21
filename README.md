@@ -31,7 +31,7 @@ The service connects to other services, which should be declared as accessible h
 * sparql-endpoint-service : SPARQL endpoint
 
 The service URLs are given by the following environment variables
-|Environment variable|default value|
+| Environment variable | default value |
 |--------------------|-------------|
 |ldsb-service-url    | http://ldsb-service:81 |
 |subjectpages-service-url    | http://subjectpages-service |
