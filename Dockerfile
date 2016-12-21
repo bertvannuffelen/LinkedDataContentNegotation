@@ -1,24 +1,35 @@
-#FROM webdevops/apache:debian-9
-#  > creates an eternal loop
-FROM eboraas/apache
+#-----------------------------------------------------------------------------------------------------#   
+# use the official Docker container
+#
+# official container 
+#     * deploys the build from the apache.org downloads page
+#     * does not come with the supporting tools to configure the webservice as in a Debian distribution
+#     * make logs only accessible via the docker logs streams, so no persistence
+# 
+# This Docker configuration is a minor adaptation to the Official container setup. 
+# Extra steps are in the layers for documenentation purpose
+#-----------------------------------------------------------------------------------------------------#   
+FROM httpd:2.4
 
-RUN a2enmod rewrite
-RUN a2enmod cgi
-RUN a2enmod headers
-RUN a2enmod env
-RUN a2enmod log_debug
-RUN a2enmod proxy
-RUN a2enmod proxy_http
+# make logs persistent in /logs
+RUN mkdir -p /logs && chmod -R 666 /logs
 
+# config directory holds the configuration
 ADD config /config
-ADD www /www
+    # activates the necessary modules
+COPY config/httpd.conf /usr/local/apache2/conf/httpd.conf
+    # vhosts configuration:
+    # aliases /scripts with cgi-bin
+    # sets logs to point to /logs
+COPY config/httpd-vhosts.conf /usr/local/apache2/conf/extra/httpd-vhosts.conf
+
+# scripts directory is the cgi-bin for the config
 ADD scripts /scripts
-ENV WEB_DOCUMENT_ROOT=/www
+RUN chmod -R 555 /scripts
 
-# check out latest version 2.4
-#RUN a2enmod negotation
+# www directory holds the document root
+ADD www /www
+RUN rm -rf /usr/local/apache2/htdocs && ln -s /www /usr/local/apache2/htdocs
 
-RUN cp /config/*.conf /etc/apache2/conf-enabled/
-RUN cp /config/global/*.conf /etc/apache2/
-RUN chmod -R 777 /scripts
+
 
