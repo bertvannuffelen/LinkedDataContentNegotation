@@ -34,21 +34,27 @@ The service URLs are given by the following environment variables
 
 | Environment variable | default value |
 | -------------------- | ------------- |
-|ldsb-service-url    | http://ldsb-service:81 |
-|subjectpages-service-url    | http://subjectpages-service |
-|sparql-endpoint-service-url    | http://sparql-endpoint-service:8890/sparql |
+| ENV_LDSB_SERVICE_URL    | http://ldsb-service:81 |
+| ENV_SUBJECTPAGES_SERVICE_URL    | http://subjectpages-service |
+| ENV_SPARQL_ENDPOINT_SERVICE_URL    | http://sparql-endpoint-service:8890/sparql |
 
 
 
 ## Execution
+A typical start in production setting will be
+
 ```
 docker run -d -p 80:80 
     --add-host sparql-endpoint-service:<ip/hostname>
     --add-host ldsb-service:<ip/hostname>
     --add-host subjectpages-service:<ip/hostname> 
     --name=cn 
+    -v /persistentstorage/logs/LinkedDataContentNegotation/:/logs
     bertvannuffelen/linkeddatacontentnegotation
 ```
+
+Note the public exposure of the logs on persistent storage. It is a good practice to ensure that the logs are stored on
+a safe location. If the service has to change, the logs are kept for future problem resolution.
 
 # Design decisions
 

@@ -11,17 +11,21 @@
 #-----------------------------------------------------------------------------------------------------#   
 FROM httpd:2.4
 
+
 # make logs persistent in /logs
 RUN mkdir -p /logs && chmod -R 666 /logs
 
 # config directory holds the configuration
 ADD config /config
+ENV PATH /config/bin:$PATH
     # activates the necessary modules
 COPY config/httpd.conf /usr/local/apache2/conf/httpd.conf
     # vhosts configuration:
     # aliases /scripts with cgi-bin
     # sets logs to point to /logs
 COPY config/httpd-vhosts.conf /usr/local/apache2/conf/extra/httpd-vhosts.conf
+
+
 
 # scripts directory is the cgi-bin for the config
 ADD scripts /scripts
@@ -32,4 +36,11 @@ ADD www /www
 RUN rm -rf /usr/local/apache2/htdocs && ln -s /www /usr/local/apache2/htdocs
 
 
+# Default Environment Variable assignments
+ENV ENV_LDSB_SERVICE_URL http://ldsb-service:81
+ENV ENV_SUBJECTPAGES_SERVICE_URL http://subjectpages-service
+ENV ENV_SPARQL_ENDPOINT_SERVICE_URL http://sparql-endpoint-service:8890/sparql
 
+# redefine the start of the service to be incorporate the runtime configuration 
+# of environment variables
+CMD ["/config/bin/start.sh"]
