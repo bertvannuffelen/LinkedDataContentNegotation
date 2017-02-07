@@ -38,7 +38,11 @@ The service URLs are given by the following environment variables
 | ENV_SUBJECTPAGES_SERVICE_URL    | http://subjectpages-service |
 | ENV_SPARQL_ENDPOINT_SERVICE_URL    | http://sparql-endpoint-service:8890/sparql |
 
+## Configuration
 
+| Environment variable | default value |
+| -------------------- | ------------- |
+| ENV_URI_DOMAIN | http://data.vlaanderen.be |
 
 ## Execution
 A typical start in production setting will be
@@ -64,4 +68,15 @@ This complies to the current standardization levels and best practices for imple
 Namely the HTTP 300 respons has no standard respons body which can detail the allowed/supported options by the server.
 Therefore the handling of the HTTP 300 respons cannot be automated, and it it better to force the consumer to take explicit action
 in its client code.
+
+## sparql endpoint
+This proxy activates a sparql-endpoint at the url $ENV_URI_DOMAIN/sparql. This sparql interface has a web interface and a machine readable interface.
+Via content negotation the machine readable interface is reachable. The Accept header is one of the following values defined according to W3C:
+
+| ACCEPT header | description format |
+| -------------------- | ------------- |
+|application/sparql-results+json| [https://www.w3.org/TR/sparql11-results-json/] |
+|application/sparql-results+xml | [https://www.w3.org/TR/rdf-sparql-XMLres/] |
+|text/csv                       | [https://www.w3.org/TR/sparql11-results-csv-tsv/] |
+|text/tab-separated-values      | [https://www.w3.org/TR/sparql11-results-csv-tsv/] |
 
