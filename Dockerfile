@@ -35,8 +35,8 @@ RUN chmod -R 555 /scripts
 ADD www /www
 RUN rm -rf /usr/local/apache2/htdocs && ln -s /www /usr/local/apache2/htdocs
 
-
 # Default Environment Variable assignments
+# these values can be overwritten at runtime
 ENV ENV_LDSB_SERVICE_URL http://ldsb-service:81
 ENV ENV_SUBJECTPAGES_SERVICE_URL http://subjectpages-service
 ENV ENV_SPARQL_ENDPOINT_SERVICE_URL http://sparql-endpoint-service:8890/sparql
