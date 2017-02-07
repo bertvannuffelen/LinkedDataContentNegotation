@@ -42,7 +42,7 @@ The service URLs are given by the following environment variables
 
 | Environment variable | default value |
 | -------------------- | ------------- |
-| ENV_URI_DOMAIN | http://data.vlaanderen.be |
+| ENV_URI_DOMAIN | data.vlaanderen.be |
 
 ## Execution
 A typical start in production setting will be
@@ -52,6 +52,7 @@ docker run -d -p 80:80
     --add-host sparql-endpoint-service:<ip/hostname>
     --add-host ldsb-service:<ip/hostname>
     --add-host subjectpages-service:<ip/hostname> 
+    -e ENV_LDSB_SERVICE_URL=http://ldsb-service
     --name=cn 
     -v /persistentstorage/logs/LinkedDataContentNegotation/:/logs
     bertvannuffelen/linkeddatacontentnegotation
