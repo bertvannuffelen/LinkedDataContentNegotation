@@ -80,3 +80,16 @@ Via content negotation the machine readable interface is reachable. The Accept h
 |text/csv                       | [https://www.w3.org/TR/sparql11-results-csv-tsv/] |
 |text/tab-separated-values      | [https://www.w3.org/TR/sparql11-results-csv-tsv/] |
 
+
+## content negotation
+This proxy activates content negotation. The table below describes the implemented accept headers.
+
+
+| document format | corresponding accept-header | corresponding extension |
+| --------------- | --------------------------- | ----------------------- |
+| HTML | text/html | .html|
+| RDF  | application/rdf+xml | .rdf|
+| TURTLE | text/turtle | .ttl|
+| NTRIPLES | text/ntriples | .nt|
+| jsonld | text/jsonld | .jsonld|
+
