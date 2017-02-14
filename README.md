@@ -92,5 +92,6 @@ This proxy activates content negotation. The table below describes the implement
 | RDF  | application/rdf+xml | .rdf|
 | TURTLE | text/turtle | .ttl|
 | NTRIPLES | text/ntriples | .nt|
-| jsonld | text/jsonld | .jsonld|
+| jsonld | application/ld+json| .jsonld|
+| json | application/json| .json|
 
