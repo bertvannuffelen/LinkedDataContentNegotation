@@ -13,7 +13,7 @@ echo "Content-type: text/html"
 echo "Status: $REDIRECT_STATUS Bad Request"
 echo ""
 
-cat /scripts/400-nonfound-before.html
+cat /scripts/400-badrequest-before.html
 
 
 
