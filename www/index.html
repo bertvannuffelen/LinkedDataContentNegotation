@@ -30,26 +30,71 @@
   </div>
 
   <!-- Start page content -->
-  <div class="page">
+<div class="page">
+  <div id="main" itemprop="mainContentOfPage" role="main" tabindex="-1" class="main-content">
+    <header class="content-header" role="banner">
+  <div class="content-header__wrapper">
+    <picture>
+      <!--[if IE 9]>
+      <video style="display: none;"><![endif]-->
+      <source srcset="//www.vlaanderen.be/sites/default/files/ip_acm/page_banner_wide_alt/header.jpg 1x" media="(min-width: 1024px)">
+      <source srcset="//www.vlaanderen.be/sites/default/files/ip_acm/page_banner_mobile_alt/header.jpg 1x" media="(max-device-width: 767px)">
+      <source srcset="//www.vlaanderen.be/sites/default/files/ip_acm/page_banner_narrow/header.jpg 1x" media="(max-width: 1023px)">
+      <!--[if IE 9]></video><![endif]-->
+      <!--[if lt IE 9]>
+      <img itemprop="image" src=//www.vlaanderen.be/sites/default/files/ip_acm/page_banner_wide_alt/header.jpg" alt="" title=""/>
+      <![endif]-->
+      <!--[if !lt IE 9]><!-->
+      <img src="//www.vlaanderen.be/sites/default/files/ip_acm/page_banner_wide_alt/header.jpg" srcset="//www.vlaanderen.be/sites/default/files/ip_acm/page_banner_mobile_alt/header.jpg 320w, //www.vlaanderen.be/sites/default/files/ip_acm/page_banner_narrow/header.jpg 1024w, //www.vlaanderen.be/sites/default/files/ip_acm/page_banner_wide_alt/header.jpg 1600w" alt="" title="">
+      <!-- <![endif]-->
+    </picture>
     <div class="layout layout--wide">
-      <div class="skiplink">
-        <a rel="nofollow" rel="noreferrer"href="#main">Overslaan en naar de algemene inhoud gaan</a>
-      </div>
-    </div>
-
-    <!-- header here -->
-    <!-- end header -->
-    <div id="main" itemprop="mainContentOfPage" role="main" tabindex="-1" class="main-content">
-      <div class="region">
-        <div class="layout layout--wide">
-	Welkom
-
-        </div>
+      <div class="content-header__content">
+        <h1 class="content-header__title"><span class="content-header__title__content">Data.Vlaanderen.be</span></h1>
       </div>
     </div>
   </div>
-  <!-- End page content -->
+</header>
+    
+    <section class="region">
+      <div class="layout layout--wide">
+        
+        <!-- component -->
+<p>
+data.vlaanderen.be is het domein waarop de <a href="http://www.vlaanderen.be/informatievlaanderen">Agentschap Informatie Vlaanderen</a> data ontsluit volgens de principes beschreven in de <a href="https://overheid.vlaanderen.be/OSLO-URI-standaard">Vlaamse URI strategie</a>. 
+Dit domein past binnen het de doelstelling van de Vlaamse overheid om in te zetten op een éénduidige standaard voor de uitwisseling van informatie.
+Het project <a href="https://overheid.vlaanderen.be/producten-diensten/OSLO2">Open Standaarden voor Linkende Overheden</a>(OSLO) is de overkoepelende drijvende kracht achter de dienstverlening van data.vlaanderen.be.
+</p>
 
+<p>
+Alle identifiers van informatieobjecten die beschikbaar zijn via dit domein in de vorm van een URI zijn persistent en semantisch éénduidig. 
+Met andere woorden, gebruikers van de URI's met als domein data.vlaanderen.be kunnen ervan uitgaan dat deze identifier steeds zal blijven bestaan en dat in de loop van de tijd deze identifier steeds zal verwijzen naar een en hetzelfde object. 
+</p>
+
+<p>
+Een <a href="https://overheid.vlaanderen.be/OSLO-CRAB-als-gelinkte-Open-Data">eerste dataset</a> die ontsloten wordt op dit domein zijn de addressen uit het <a href="https://overheid.vlaanderen.be/producten-diensten/adressenregister-crab">adressenregister (CRAB)</a> komende uit het nieuwe <a href="https://overheid.vlaanderen.be/producten-diensten/gebouwenregister">gebouwenregister</a>. 
+</p>
+
+
+      <section class="info-block info-block--news">
+          <header class="info-block__header">
+            <h1 class="info-block__title">Beta Release</h1>
+          </header>
+          <div class="info-block__content">
+           Op maandag 3 april is data.vlaanderen.be in beta publiek gegaan. 
+          </div>
+        </section>
+
+
+
+<h2 class="h2">voorbeeld</h2>
+De URI <i>http://data.vlaanderen.be/id/adres/2179183</i> is de persistente identifier voor het adres <i>Koningin Maria Hendrikaplein 70, Gent</i>. Als deze URI opgevraagd wordt via een webbrowser dan verkrijgt met een menselijk leesbare webpagina waarop informatie over dit adres wordt weergegeven. Dezelfde informatie wordt ook via content negotatie aangeboden in machine leesbare vorm als RDF. Er is ondersteuning voor ntriples, RDF/XML, turtle.  
+
+Elk identifier heeft een aantal eigenschappen die worden beschreven in een vocabularium. De gebruikte vocabularia worden op dezelfde wijze als informatieobjecten ontsloten. Dus de persistentie en semantische eenduidigheid garantie geldt hiervoor ook. 
+
+
+        
+        <!-- end component -->
 
   <div id="vlaanderen-footer">
     <!-- insert your Vlaanderen-footer-code here -->
