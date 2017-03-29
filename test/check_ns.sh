@@ -31,22 +31,22 @@ C="http://data.vlaanderen.be/ns "
 Tval=404
 no_header_check
 
-C="http://data.vlaanderen.be/ns/gebouw"
+C="http://data.vlaanderen.be/ns/adres"
 Tval=404
 no_header_check
 
 # we force currently that Accept header must be set
-C="http://data.vlaanderen.be/ns/gebouw.ttl"
+C="http://data.vlaanderen.be/ns/adres.ttl"
 Tval=200
 no_header_check
 
 # we force currently that Accept header must be set
-C="http://data.vlaanderen.be/ns/gebouw.rdf"
+C="http://data.vlaanderen.be/ns/adres.rdf"
 Tval=200
 no_header_check
 
 # we force currently that Accept header must be set
-C="http://data.vlaanderen.be/ns/gebouw.html"
+C="http://data.vlaanderen.be/ns/adres.html"
 Tval=200
 no_header_check
 
@@ -81,18 +81,18 @@ Tval=200
 ttlheader
 header_check
 
-C="http://data.vlaanderen.be/ns/gebouw"
+C="http://data.vlaanderen.be/ns/adres"
 Tval=200
 ttlheader
 header_check
 
-C="http://data.vlaanderen.be/ns/gebouw.ttl"
+C="http://data.vlaanderen.be/ns/adres.ttl"
 Tval=200
 ttlheader
 header_check
 
 # ignore accept header if file extension is present
-C="http://data.vlaanderen.be/ns/gebouw.ttl"
+C="http://data.vlaanderen.be/ns/adres.ttl"
 Tval=200
 htmlheader
 header_check
