@@ -2,7 +2,7 @@
 <html lang="nl">
 
 <head>
-  <title>UX richtlijnen | Vlaanderen.be</title>
+  <title>Toegankelijkheidsverklaring Data.vlaanderen.be</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,32 +30,53 @@
   </div>
 
   <!-- Start page content -->
-  <div class="page">
+<div class="page">
+  <div id="main" itemprop="mainContentOfPage" role="main" tabindex="-1" class="main-content">
+    <header class="content-header" role="banner">
+  <div class="content-header__wrapper">
+    <picture>
+      <!--[if IE 9]>
+      <video style="display: none;"><![endif]-->
+      <source srcset="//www.vlaanderen.be/sites/default/files/ip_acm/page_banner_wide_alt/header.jpg 1x" media="(min-width: 1024px)">
+      <source srcset="//www.vlaanderen.be/sites/default/files/ip_acm/page_banner_mobile_alt/header.jpg 1x" media="(max-device-width: 767px)">
+      <source srcset="//www.vlaanderen.be/sites/default/files/ip_acm/page_banner_narrow/header.jpg 1x" media="(max-width: 1023px)">
+      <!--[if IE 9]></video><![endif]-->
+      <!--[if lt IE 9]>
+      <img itemprop="image" src=//www.vlaanderen.be/sites/default/files/ip_acm/page_banner_wide_alt/header.jpg" alt="" title=""/>
+      <![endif]-->
+      <!--[if !lt IE 9]><!-->
+      <img src="//www.vlaanderen.be/sites/default/files/ip_acm/page_banner_wide_alt/header.jpg" srcset="//www.vlaanderen.be/sites/default/files/ip_acm/page_banner_mobile_alt/header.jpg 320w, //www.vlaanderen.be/sites/default/files/ip_acm/page_banner_narrow/header.jpg 1024w, //www.vlaanderen.be/sites/default/files/ip_acm/page_banner_wide_alt/header.jpg 1600w" alt="" title="">
+      <!-- <![endif]-->
+    </picture>
     <div class="layout layout--wide">
-      <div class="skiplink">
-        <a rel="nofollow" rel="noreferrer"href="#main">Overslaan en naar de algemene inhoud gaan</a>
-      </div>
-    </div>
-
-    <!-- header here -->
-    <!-- end header -->
-    <div id="main" itemprop="mainContentOfPage" role="main" tabindex="-1" class="main-content">
-      <div class="region">
-        <div class="layout layout--wide">
-Data.vlaanderen.be beheert de volgende vocabularia
-
-<ul>
-  <li><a href="">Algemeen</a></li>
-  <li><a href="">Adres</a></li>
-</ul>
-  
-
-
-        </div>
+      <div class="content-header__content">
+        <h1 class="content-header__title"><span class="content-header__title__content">Vocabularia</span></h1>
       </div>
     </div>
   </div>
+</header>
+    
+    <section class="region">
+      <div class="layout layout--wide">
+        
+        <!-- component -->
+De volgende vocabularia zijn beschikbaar:
+<ul class="bullet-list bullet-list--tag">
+	<li class="bullet-list__item"><a href="/ns/generiek.html">Generiek</a>: Een algemeen ondersteunend vocabularium</li>
+	<li class="bullet-list__item"><a href="/ns/adres.html">Adres</a>: Het Adres vocabularium</li>
+	<li class="bullet-list__item"><a href="/ns/organisatie.html">Organisatie</a>: Het Organisatie vocabularium</li>
+	<li class="bullet-list__item"><a href="/ns/persoon.html">Persoon</a>: Het Persoon vocabularium<li>
+</ul>
+ 
+        
+        <!-- end component -->
+        
+      </div>
+    </section>
+  </div>
+</div>
   <!-- End page content -->
+
 
 
   <div id="vlaanderen-footer">
