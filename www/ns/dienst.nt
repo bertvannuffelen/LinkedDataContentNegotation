@@ -1,0 +1,165 @@
+<http://data.europa.eu/m8g/BusinessEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Bedrijfsgebeurtenis"@nl .
+<http://data.europa.eu/m8g/Channel> <http://www.w3.org/2000/01/rdf-schema#label> "kanaal"@nl .
+<http://data.europa.eu/m8g/Cost> <http://www.w3.org/2000/01/rdf-schema#label> "kost"@nl .
+<http://data.europa.eu/m8g/CriterionRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "Criteriumvereiste"@nl .
+<http://data.europa.eu/m8g/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Gebeurtenis"@nl .
+<http://data.europa.eu/m8g/Evidence> <http://www.w3.org/2000/01/rdf-schema#label> "Bewijs"@nl .
+<http://data.europa.eu/m8g/LifeEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Levensgebeurtenis"@nl .
+<http://data.europa.eu/m8g/Output> <http://www.w3.org/2000/01/rdf-schema#label> "Output"@nl .
+<http://data.europa.eu/m8g/Participation> <http://www.w3.org/2000/01/rdf-schema#label> "Participatie"@nl .
+<http://data.europa.eu/m8g/currency> <http://www.w3.org/2000/01/rdf-schema#label> "valuta"@nl .
+<http://data.europa.eu/m8g/hasChannel> <http://www.w3.org/2000/01/rdf-schema#label> "heeft kanaal"@nl .
+<http://data.europa.eu/m8g/hasCompetentAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "heeft verantwoordelijke autoriteit"@nl .
+<http://data.europa.eu/m8g/hasContactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "heeft contactpunt"@nl .
+<http://data.europa.eu/m8g/hasCost> <http://www.w3.org/2000/01/rdf-schema#label> "heeft kost"@nl .
+<http://data.europa.eu/m8g/hasCriterion> <http://www.w3.org/2000/01/rdf-schema#label> "heeft criterium"@nl .
+<http://data.europa.eu/m8g/hasFormalFramework> <http://www.w3.org/2000/01/rdf-schema#label> "heeft formeel kader"@nl .
+<http://data.europa.eu/m8g/hasParticipation> <http://www.w3.org/2000/01/rdf-schema#label> "heeft participatie"@nl .
+<http://data.europa.eu/m8g/ifAccessedThrough> <http://www.w3.org/2000/01/rdf-schema#label> "indien benaderd via"@nl .
+<http://data.europa.eu/m8g/isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is gedefinieerd door"@nl .
+<http://data.europa.eu/m8g/isGroupedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is gegroepeerd volgens"@nl .
+<http://data.europa.eu/m8g/ownedBy> <http://www.w3.org/2000/01/rdf-schema#label> "eigendom van"@nl .
+<http://data.europa.eu/m8g/playsRole> <http://www.w3.org/2000/01/rdf-schema#label> "speelt rol"@nl .
+<http://data.europa.eu/m8g/processingTime> <http://www.w3.org/2000/01/rdf-schema#label> "verwerkingstijd"@nl .
+<http://data.europa.eu/m8g/role> <http://www.w3.org/2000/01/rdf-schema#label> "rol"@nl .
+<http://data.europa.eu/m8g/sector> <http://www.w3.org/2000/01/rdf-schema#label> "sector"@nl .
+<http://data.europa.eu/m8g/serviceProvider> <http://www.w3.org/2000/01/rdf-schema#label> "dienstverlener"@nl .
+<http://data.europa.eu/m8g/value> <http://www.w3.org/2000/01/rdf-schema#label> "waarde"@nl .
+_:genid1 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/producten-diensten/OSLO2> .
+_:genid1 <http://xmlns.com/foaf/0.1/mbox> <mailto:oslo@kb.vlaanderen.be> .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "OSLO Werkgroepen" .
+_:genid2 <http://xmlns.com/foaf/0.1/homepage> <http://idlab.ugent.be> .
+_:genid2 <http://xmlns.com/foaf/0.1/name> "imec - UGent" .
+_:genid3 <http://schema.org/affiliation> _:genid2 .
+_:genid3 <http://xmlns.com/foaf/0.1/mbox> <mailto:erik.mannens@ugent.be> .
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Mannens, Erik" .
+_:genid4 <http://xmlns.com/foaf/0.1/homepage> <http://idlab.ugent.be> .
+_:genid4 <http://xmlns.com/foaf/0.1/name> "imec - UGent" .
+_:genid5 <http://schema.org/affiliation> _:genid4 .
+_:genid5 <http://xmlns.com/foaf/0.1/mbox> <mailto:laurens.devocht@ugent.be> .
+_:genid5 <http://xmlns.com/foaf/0.1/name> "De Vocht, Laurens" .
+_:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:genid6 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:genid7 <http://schema.org/affiliation> _:genid6 .
+_:genid7 <http://xmlns.com/foaf/0.1/mbox> <mailto:raf.buyle@agiv.be> .
+_:genid7 <http://xmlns.com/foaf/0.1/name> "Buyle, Raf" .
+_:genid8 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:genid8 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:genid9 <http://schema.org/affiliation> _:genid8 .
+_:genid9 <http://xmlns.com/foaf/0.1/mbox> <mailto:dries.beheydt@agiv.be> .
+_:genid9 <http://xmlns.com/foaf/0.1/name> "Beheydt, Dries" .
+_:genid10 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:genid10 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:genid11 <http://schema.org/affiliation> _:genid10 .
+_:genid11 <http://xmlns.com/foaf/0.1/mbox> <mailto:bjorn.devidts@agiv.be> .
+_:genid11 <http://xmlns.com/foaf/0.1/name> "De Vidts, Bj\u00F6rn" .
+_:genid12 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
+_:genid12 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:genid13 <http://schema.org/affiliation> _:genid12 .
+_:genid13 <http://xmlns.com/foaf/0.1/mbox> <mailto:dorien.bauwens@bz.vlaanderen.be> .
+_:genid13 <http://xmlns.com/foaf/0.1/name> "Bauwens, Dorien" .
+_:genid14 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:genid14 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:genid15 <http://schema.org/affiliation> _:genid14 .
+_:genid15 <http://xmlns.com/foaf/0.1/mbox> <mailto:katrien.desmet@kb.vlaanderen.be> .
+_:genid15 <http://xmlns.com/foaf/0.1/name> "De Smet, Katrien" .
+_:genid16 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
+_:genid16 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:genid17 <http://schema.org/affiliation> _:genid16 .
+_:genid17 <http://xmlns.com/foaf/0.1/mbox> <mailto:thomas.dhaenens@bz.vlaanderen.be> .
+_:genid17 <http://xmlns.com/foaf/0.1/name> "D'haenens, Thomas" .
+_:genid18 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:genid18 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:genid19 <http://schema.org/affiliation> _:genid18 .
+_:genid19 <http://xmlns.com/foaf/0.1/mbox> <mailto:Geert.Thijs@agiv.be> .
+_:genid19 <http://xmlns.com/foaf/0.1/name> "Thijs, Geert" .
+_:genid20 <http://xmlns.com/foaf/0.1/homepage> <http://idlab.ugent.be> .
+_:genid20 <http://xmlns.com/foaf/0.1/name> "imec - UGent" .
+_:genid21 <http://schema.org/affiliation> _:genid20 .
+_:genid21 <http://xmlns.com/foaf/0.1/mbox> <mailto:dieter.depaepe@ugent.be> .
+_:genid21 <http://xmlns.com/foaf/0.1/name> "De Paepe, Dieter" .
+_:genid22 <http://xmlns.com/foaf/0.1/homepage> <http://stad.gent> .
+_:genid22 <http://xmlns.com/foaf/0.1/name> "Stad Gent" .
+_:genid23 <http://schema.org/affiliation> _:genid22 .
+_:genid23 <http://xmlns.com/foaf/0.1/mbox> <mailto:Thimo.Thoeye@stad.gent> .
+_:genid23 <http://xmlns.com/foaf/0.1/name> "Thoeye, Thimo" .
+_:genid24 <http://xmlns.com/foaf/0.1/homepage> <https://www.lne.be/> .
+_:genid24 <http://xmlns.com/foaf/0.1/name> "LNE" .
+_:genid25 <http://schema.org/affiliation> _:genid24 .
+_:genid25 <http://xmlns.com/foaf/0.1/mbox> <mailto:geert.vanhaute@lne.vlaanderen.be> .
+_:genid25 <http://xmlns.com/foaf/0.1/name> "Van Haute, Geert" .
+_:genid26 <http://xmlns.com/foaf/0.1/homepage> <http://cipalschaubroeck.be> .
+_:genid26 <http://xmlns.com/foaf/0.1/name> "Cipal Schaubroeck" .
+_:genid27 <http://schema.org/affiliation> _:genid26 .
+_:genid27 <http://xmlns.com/foaf/0.1/mbox> <mailto:willem.vanhoecke@cipalschaubroeck.be> .
+_:genid27 <http://xmlns.com/foaf/0.1/name> "Van Hoecke, Willem" .
+_:genid28 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
+_:genid28 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:genid29 <http://schema.org/affiliation> _:genid28 .
+_:genid29 <http://xmlns.com/foaf/0.1/mbox> <mailto:henk.vanderstraeten@bz.vlaanderen.be> .
+_:genid29 <http://xmlns.com/foaf/0.1/name> "Vanderstraeten, Henk" .
+_:genid30 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:genid30 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:genid31 <http://schema.org/affiliation> _:genid30 .
+_:genid31 <http://xmlns.com/foaf/0.1/mbox> <mailto:an.taelemans@kb.vlaanderen.be> .
+_:genid31 <http://xmlns.com/foaf/0.1/name> "Taelemans, An" .
+_:genid32 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
+_:genid32 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:genid33 <http://schema.org/affiliation> _:genid32 .
+_:genid33 <http://xmlns.com/foaf/0.1/mbox> <mailto:quincy.oeyen@bz.vlaanderen.be> .
+_:genid33 <http://xmlns.com/foaf/0.1/name> "Oeyen, Quincy" .
+_:genid34 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:genid34 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:genid35 <http://schema.org/affiliation> _:genid34 .
+_:genid35 <http://xmlns.com/foaf/0.1/mbox> <mailto:Siegfried.Vanlishout@agiv.be> .
+_:genid35 <http://xmlns.com/foaf/0.1/name> "Van Lishout, Ziggy" .
+<http://data.vlaanderen.be/ns/dienst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://data.vlaanderen.be/ns/dienst> <http://www.w3.org/2000/01/rdf-schema#label> "Service"@en .
+<http://data.vlaanderen.be/ns/dienst> <http://www.w3.org/2000/01/rdf-schema#label> "Dienst"@nl .
+<http://data.vlaanderen.be/ns/dienst> <http://purl.org/dc/terms/issued> "2017-03-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.vlaanderen.be/ns/dienst> <http://purl.org/dc/terms/mediator> _:genid1 .
+<http://data.vlaanderen.be/ns/dienst> <http://purl.org/dc/terms/title> "Service"@en .
+<http://data.vlaanderen.be/ns/dienst> <http://purl.org/dc/terms/title> "Dienst"@nl .
+<http://data.vlaanderen.be/ns/dienst> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://data.vlaanderen.be/ns/dienst" .
+<http://data.vlaanderen.be/ns/dienst> <http://www.w3.org/2001/02pd/rec54#editor> _:genid3 .
+<http://data.vlaanderen.be/ns/dienst> <http://www.w3.org/2001/02pd/rec54#editor> _:genid5 .
+<http://data.vlaanderen.be/ns/dienst> <http://xmlns.com/foaf/0.1/maker> _:genid7 .
+<http://data.vlaanderen.be/ns/dienst> <http://xmlns.com/foaf/0.1/maker> _:genid9 .
+<http://data.vlaanderen.be/ns/dienst> <http://xmlns.com/foaf/0.1/maker> _:genid11 .
+<http://data.vlaanderen.be/ns/dienst> <http://xmlns.com/foaf/0.1/maker> _:genid13 .
+<http://data.vlaanderen.be/ns/dienst> <http://xmlns.com/foaf/0.1/maker> _:genid15 .
+<http://data.vlaanderen.be/ns/dienst> <http://xmlns.com/foaf/0.1/maker> _:genid17 .
+<http://data.vlaanderen.be/ns/dienst> <http://xmlns.com/foaf/0.1/maker> _:genid19 .
+<http://data.vlaanderen.be/ns/dienst> <http://xmlns.com/foaf/0.1/maker> _:genid21 .
+<http://data.vlaanderen.be/ns/dienst> <http://xmlns.com/foaf/0.1/maker> _:genid23 .
+<http://data.vlaanderen.be/ns/dienst> <http://xmlns.com/foaf/0.1/maker> _:genid25 .
+<http://data.vlaanderen.be/ns/dienst> <http://xmlns.com/foaf/0.1/maker> _:genid27 .
+<http://data.vlaanderen.be/ns/dienst> <http://xmlns.com/foaf/0.1/maker> _:genid29 .
+<http://data.vlaanderen.be/ns/dienst> <http://xmlns.com/foaf/0.1/maker> _:genid31 .
+<http://data.vlaanderen.be/ns/dienst> <http://xmlns.com/foaf/0.1/maker> _:genid33 .
+<http://data.vlaanderen.be/ns/dienst> <http://xmlns.com/foaf/0.1/maker> _:genid35 .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "beschrijving"@nl .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#label> "taal"@nl .
+<http://purl.org/dc/terms/relation> <http://www.w3.org/2000/01/rdf-schema#label> "relatie"@nl .
+<http://purl.org/dc/terms/requires> <http://www.w3.org/2000/01/rdf-schema#label> "vereist"@nl .
+<http://purl.org/dc/terms/spatial> <http://www.w3.org/2000/01/rdf-schema#label> "ruimtelijke dekking"@nl .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "Titel"@nl .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "titel"@nl .
+<http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#label> "type"@nl .
+<http://purl.org/vocab/cpsv#PublicService> <http://www.w3.org/2000/01/rdf-schema#label> "Publieke Dienstverlening"@nl .
+<http://purl.org/vocab/cpsv#Rule> <http://www.w3.org/2000/01/rdf-schema#label> "Richtlijn"@nl .
+<http://purl.org/vocab/cpsv#follows> <http://www.w3.org/2000/01/rdf-schema#label> "volgt"@nl .
+<http://purl.org/vocab/cpsv#hasInput> <http://www.w3.org/2000/01/rdf-schema#label> "heeft input"@nl .
+<http://purl.org/vocab/cpsv#implements> <http://www.w3.org/2000/01/rdf-schema#label> "implementeert"@nl .
+<http://purl.org/vocab/cpsv#produces> <http://www.w3.org/2000/01/rdf-schema#label> "produceert"@nl .
+<http://www.w3.org/ns/adms#status> <http://www.w3.org/2000/01/rdf-schema#label> "status"@nl .
+<http://www.w3.org/ns/dcat#keyword> <http://www.w3.org/2000/01/rdf-schema#label> "trefwoord"@nl .
+<http://xmlns.com/foaf/0.1/page> <http://www.w3.org/2000/01/rdf-schema#label> "pagina"@nl .
+<https://schema.org/OpeningHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Openingsurenspecificatie"@nl .
+<https://schema.org/closes> <http://www.w3.org/2000/01/rdf-schema#label> "sluit"@nl .
+<https://schema.org/dayOfWeek> <http://www.w3.org/2000/01/rdf-schema#label> "dag van week"@nl .
+<https://schema.org/hoursAvailable> <http://www.w3.org/2000/01/rdf-schema#label> "uren beschikbaarheid"@nl .
+<https://schema.org/openingHours> <http://www.w3.org/2000/01/rdf-schema#label> "openingsuren"@nl .
+<https://schema.org/opens> <http://www.w3.org/2000/01/rdf-schema#label> "opent"@nl .
+<https://schema.org/validFrom> <http://www.w3.org/2000/01/rdf-schema#label> "geldig van"@nl .
+<https://schema.org/validThrough> <http://www.w3.org/2000/01/rdf-schema#label> "geldig tot"@nl .
