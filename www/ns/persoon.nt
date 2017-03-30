@@ -1,4 +1,3 @@
-<http:///www.w3.org/ns/person#residency> <http://www.w3.org/2000/01/rdf-schema#label> "inwonerschap"@nl .
 <http://data.vlaanderen.be/ns/persoon#Domicilie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.vlaanderen.be/ns/persoon#Domicilie> <http://www.w3.org/2000/01/rdf-schema#label> "Domicilie"@nl .
 <http://data.vlaanderen.be/ns/persoon#Domicilie> <http://purl.org/vocab/vann/usageNote> "Plaats waar de Persoon het grootste deel vd tijd verblijft binnen de jurisdictie waarvan hij Inwoner is. Dit wordt doorgaans officieel vastgesteld en geregistreerd ih bevolkingsregister. Kan in praktijk verschillend vd feitelijke verblijfplaats."@nl .
@@ -16,7 +15,7 @@
 <http://data.vlaanderen.be/ns/persoon#Huwelijk> <http://purl.org/vocab/vann/usageNote> "Kan, net als bv Samenwonen, de basis vormen van een Gezin."@nl .
 <http://data.vlaanderen.be/ns/persoon#Huwelijk> <http://www.w3.org/2000/01/rdf-schema#comment> "Een door burgerlijk of religieus recht geregelde\u00A0samenlevingsvorm van twee personen."@nl .
 <http://data.vlaanderen.be/ns/persoon#Huwelijk> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.vlaanderen.be/ns/persoon> .
-<http://data.vlaanderen.be/ns/persoon#Huwelijk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.vlaanderen.be/ns/persoon#PersoonsRelatie> .
+<http://data.vlaanderen.be/ns/persoon#Huwelijk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.vlaanderen.be/ns/persoon#Persoonsrelatie> .
 <http://data.vlaanderen.be/ns/persoon#Inwonerschap.binnenJurisdictie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://data.vlaanderen.be/ns/persoon#Inwonerschap.binnenJurisdictie> <http://www.w3.org/2000/01/rdf-schema#label> "binnen jurisdictie"@nl .
 <http://data.vlaanderen.be/ns/persoon#Inwonerschap.binnenJurisdictie> <http://www.w3.org/2000/01/rdf-schema#comment> "TODO"@nl .
@@ -34,7 +33,7 @@
 <http://data.vlaanderen.be/ns/persoon#Samenwonen> <http://purl.org/vocab/vann/usageNote> "Kan, net als bv een Huwelijk, de basis vormen van een Gezin."@nl .
 <http://data.vlaanderen.be/ns/persoon#Samenwonen> <http://www.w3.org/2000/01/rdf-schema#comment> "Regeling waarbij twee personen die niet getrouwd zijn samenleven."@nl .
 <http://data.vlaanderen.be/ns/persoon#Samenwonen> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.vlaanderen.be/ns/persoon> .
-<http://data.vlaanderen.be/ns/persoon#Samenwonen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.vlaanderen.be/ns/persoon#PersoonsRelatie> .
+<http://data.vlaanderen.be/ns/persoon#Samenwonen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.vlaanderen.be/ns/persoon#Persoonsrelatie> .
 <http://data.vlaanderen.be/ns/persoon#Staatsburger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.vlaanderen.be/ns/persoon#Staatsburger> <http://www.w3.org/2000/01/rdf-schema#label> "Staatsburger"@nl .
 <http://data.vlaanderen.be/ns/persoon#Staatsburger> <http://www.w3.org/2000/01/rdf-schema#comment> "Persoon die juridisch verbonden is met een staat."@nl .
@@ -56,7 +55,7 @@
 <http://data.vlaanderen.be/ns/persoon#Voogdij> <http://www.w3.org/2000/01/rdf-schema#label> "Voogdij"@nl .
 <http://data.vlaanderen.be/ns/persoon#Voogdij> <http://www.w3.org/2000/01/rdf-schema#comment> "Situatie waarbij een Persoon die optreedt als voogd ve ander Persoon en in die hoedanigheid instaat voor deze persoon en zijn goederen."@nl .
 <http://data.vlaanderen.be/ns/persoon#Voogdij> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.vlaanderen.be/ns/persoon> .
-<http://data.vlaanderen.be/ns/persoon#Voogdij> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.vlaanderen.be/ns/persoon#PersoonsRelatie> .
+<http://data.vlaanderen.be/ns/persoon#Voogdij> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.vlaanderen.be/ns/persoon#Persoonsrelatie> .
 <http://data.vlaanderen.be/ns/persoon#Vreemdeling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.vlaanderen.be/ns/persoon#Vreemdeling> <http://www.w3.org/2000/01/rdf-schema#label> "Vreemdeling"@nl .
 <http://data.vlaanderen.be/ns/persoon#Vreemdeling> <http://purl.org/vocab/vann/usageNote> "Daardoor kan de Persoon geen Staatsburger worden genoemd. In praktijk geniet de Vreemdeling als Inwoner een subset vd burgerrechten die een Staatsbutger wel heeft. Bv wel godsdienstvrijheid maar geen stemrecht."@nl .
@@ -148,7 +147,7 @@
 <http://data.vlaanderen.be/ns/persoon#heeftPersoonsrelatie> <http://www.w3.org/2000/01/rdf-schema#comment> "TODO"@nl .
 <http://data.vlaanderen.be/ns/persoon#heeftPersoonsrelatie> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/person#Person> .
 <http://data.vlaanderen.be/ns/persoon#heeftPersoonsrelatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.vlaanderen.be/ns/persoon> .
-<http://data.vlaanderen.be/ns/persoon#heeftPersoonsrelatie> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.vlaanderen.be/ns/persoon#PersoonsRelatie> .
+<http://data.vlaanderen.be/ns/persoon#heeftPersoonsrelatie> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.vlaanderen.be/ns/persoon#Persoonsrelatie> .
 <http://data.vlaanderen.be/ns/persoon#heeftStaatsburgerschap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://data.vlaanderen.be/ns/persoon#heeftStaatsburgerschap> <http://www.w3.org/2000/01/rdf-schema#label> "heeft staatsburgerschap"@nl .
 <http://data.vlaanderen.be/ns/persoon#heeftStaatsburgerschap> <http://www.w3.org/2000/01/rdf-schema#comment> "TODO"@nl .
@@ -172,7 +171,7 @@
 <http://data.vlaanderen.be/ns/persoon#isRelatieMet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://data.vlaanderen.be/ns/persoon#isRelatieMet> <http://www.w3.org/2000/01/rdf-schema#label> "is relatie met"@nl .
 <http://data.vlaanderen.be/ns/persoon#isRelatieMet> <http://www.w3.org/2000/01/rdf-schema#comment> "TODO"@nl .
-<http://data.vlaanderen.be/ns/persoon#isRelatieMet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.vlaanderen.be/ns/persoon#PersoonsRelatie> .
+<http://data.vlaanderen.be/ns/persoon#isRelatieMet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.vlaanderen.be/ns/persoon#Persoonsrelatie> .
 <http://data.vlaanderen.be/ns/persoon#isRelatieMet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.vlaanderen.be/ns/persoon> .
 <http://data.vlaanderen.be/ns/persoon#isRelatieMet> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/person#Person> .
 <http://data.vlaanderen.be/ns/persoon#plaats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -213,6 +212,7 @@
 <http://www.w3.org/ns/person#birthName> <http://www.w3.org/2000/01/rdf-schema#label> "geboortenaam"@nl .
 <http://www.w3.org/ns/person#citizenship> <http://www.w3.org/2000/01/rdf-schema#label> "staatsburgerschap"@nl .
 <http://www.w3.org/ns/person#patronymicName> <http://www.w3.org/2000/01/rdf-schema#label> "patroniem"@nl .
+<http://www.w3.org/ns/person#residency> <http://www.w3.org/2000/01/rdf-schema#label> "inwonerschap"@nl .
 <http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/2000/01/rdf-schema#label> "familienaam"@nl .
 <http://data.vlaanderen.be/ns/persoon#Geboorte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.vlaanderen.be/ns/persoon#Geboorte> <http://www.w3.org/2000/01/rdf-schema#label> "Geboorte"@nl .
@@ -231,7 +231,7 @@
 <http://data.vlaanderen.be/ns/persoon#Gezinsrelatie> <http://purl.org/vocab/vann/usageNote> "Bv echtgenoot, zoon, schoonmoeder."@nl .
 <http://data.vlaanderen.be/ns/persoon#Gezinsrelatie> <http://www.w3.org/2000/01/rdf-schema#comment> "Relatie tussen leden van eenzelfde gezin."@nl .
 <http://data.vlaanderen.be/ns/persoon#Gezinsrelatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.vlaanderen.be/ns/persoon> .
-<http://data.vlaanderen.be/ns/persoon#Gezinsrelatie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.vlaanderen.be/ns/persoon#PersoonsRelatie> .
+<http://data.vlaanderen.be/ns/persoon#Gezinsrelatie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.vlaanderen.be/ns/persoon#Persoonsrelatie> .
 <http://data.vlaanderen.be/ns/persoon#Nationaliteit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.vlaanderen.be/ns/persoon#Nationaliteit> <http://www.w3.org/2000/01/rdf-schema#label> "Nationaliteit"@nl .
 <http://data.vlaanderen.be/ns/persoon#Nationaliteit> <http://purl.org/vocab/vann/usageNote> "Merk op dat dit begrip ruimer is dan Staatsburgerschap (dat zich beperkt tot de relatie met een staat). Wie de nationaliteit ve bepaald land heeft is er doorgaans ook automatisch Staatsburger van. Nationaliteit wordt doorgaans autamatisch verkregen door geboorte: men krijgt hetzij de nationaliteit van zijn ouders of men krijgt deze vh land waar men Inwoner van is. Men kan een bepaalde nationaliteit ook verkrijgen door naturalisatie. In principe verliest men dan zijn oorspronkelijke nationaliteit, maar dat is niet altijd zo (meervoudige nationaliteit)."@nl .
@@ -257,7 +257,7 @@
 <http://data.vlaanderen.be/ns/persoon#Afstamming> <http://purl.org/vocab/vann/usageNote> "De afstamming kan ook niet-biologisch zijn, bv adoptie. Afstamming kan ook in opgaande lijn worden bekeken. Het begrip is enger dan verwantschap dat oa ook huwelijk inhoudt."@nl .
 <http://data.vlaanderen.be/ns/persoon#Afstamming> <http://www.w3.org/2000/01/rdf-schema#comment> "Afstamming\u00A0is de dalende lijn van\u00A0bloedverwantschap\u00A0tussen verschillende\u00A0generaties."@nl .
 <http://data.vlaanderen.be/ns/persoon#Afstamming> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.vlaanderen.be/ns/persoon> .
-<http://data.vlaanderen.be/ns/persoon#Afstamming> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.vlaanderen.be/ns/persoon#PersoonsRelatie> .
+<http://data.vlaanderen.be/ns/persoon#Afstamming> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.vlaanderen.be/ns/persoon#Persoonsrelatie> .
 <http://data.vlaanderen.be/ns/persoon#BurgerlijkeStaat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.vlaanderen.be/ns/persoon#BurgerlijkeStaat> <http://www.w3.org/2000/01/rdf-schema#label> "Burgerlijke Staat"@nl .
 <http://data.vlaanderen.be/ns/persoon#BurgerlijkeStaat> <http://purl.org/vocab/vann/usageNote> "Slaat op huwelijk, partnerregistratie, afstamming, voogdij etc. Is maw de toestand van bepaalde verhoudingen tussen personen."@nl .
@@ -285,18 +285,18 @@
 <http://data.vlaanderen.be/ns/persoon#Persoonsgebeurtenis> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.vlaanderen.be/ns/persoon> .
 <http://data.vlaanderen.be/ns/persoon#Staatsburgerschap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.vlaanderen.be/ns/persoon#Staatsburgerschap> <http://www.w3.org/2000/01/rdf-schema#label> "Staatburgerschap"@nl .
-<http://data.vlaanderen.be/ns/persoon#Staatsburgerschap> <http://purl.org/vocab/vann/usageNote> "Vloeit meestal voort uit de Nationaliteit ve Persoon. De rechten en plichten waarvan sprake zijn burgerrechten (vb godsdienstvrijheid) of van politieke (vb stemrecht) of sociale aard (bv recht op een uitkering).  "@nl .
+<http://data.vlaanderen.be/ns/persoon#Staatsburgerschap> <http://purl.org/vocab/vann/usageNote> "Vloeit meestal voort uit de Nationaliteit ve Persoon. De rechten en plichten waarvan sprake zijn burgerrechten (vb godsdienstvrijheid) of van politieke (vb stemrecht) of sociale aard (bv recht op een uitkering)."@nl .
 <http://data.vlaanderen.be/ns/persoon#Staatsburgerschap> <http://www.w3.org/2000/01/rdf-schema#comment> "Juridische band ve Persoon met een staat, waaraan bepaalde rechten en plichten verbonden zijn"@nl .
 <http://data.vlaanderen.be/ns/persoon#Staatsburgerschap> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.vlaanderen.be/ns/persoon> .
 <http://data.vlaanderen.be/ns/persoon#Inwonerschap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.vlaanderen.be/ns/persoon#Inwonerschap> <http://www.w3.org/2000/01/rdf-schema#label> "Inwonerschap"@nl .
 <http://data.vlaanderen.be/ns/persoon#Inwonerschap> <http://www.w3.org/2000/01/rdf-schema#comment> "Het feit dat een Persoon verblijf houdt in een plaats of land."@nl .
 <http://data.vlaanderen.be/ns/persoon#Inwonerschap> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.vlaanderen.be/ns/persoon> .
-<http://data.vlaanderen.be/ns/persoon#PersoonsRelatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.vlaanderen.be/ns/persoon#PersoonsRelatie> <http://www.w3.org/2000/01/rdf-schema#label> "Persoonsrelatie"@nl .
-<http://data.vlaanderen.be/ns/persoon#PersoonsRelatie> <http://purl.org/vocab/vann/usageNote> "Typisch zijn dit burgerrechtelijke relaties (zie Burgerlijke Staat) maar niet noodzakelijk daartoe beperkt."@nl .
-<http://data.vlaanderen.be/ns/persoon#PersoonsRelatie> <http://www.w3.org/2000/01/rdf-schema#comment> "Relatie tussen twee of meer personen."@nl .
-<http://data.vlaanderen.be/ns/persoon#PersoonsRelatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.vlaanderen.be/ns/persoon> .
+<http://data.vlaanderen.be/ns/persoon#Persoonsrelatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.vlaanderen.be/ns/persoon#Persoonsrelatie> <http://www.w3.org/2000/01/rdf-schema#label> "Persoonsrelatie"@nl .
+<http://data.vlaanderen.be/ns/persoon#Persoonsrelatie> <http://purl.org/vocab/vann/usageNote> "Typisch zijn dit burgerrechtelijke relaties (zie Burgerlijke Staat) maar niet noodzakelijk daartoe beperkt."@nl .
+<http://data.vlaanderen.be/ns/persoon#Persoonsrelatie> <http://www.w3.org/2000/01/rdf-schema#comment> "Relatie tussen twee of meer personen."@nl .
+<http://data.vlaanderen.be/ns/persoon#Persoonsrelatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.vlaanderen.be/ns/persoon> .
 <http://www.w3.org/ns/person#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Persoon"@nl .
 _:genid1 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/producten-diensten/OSLO2> .
 _:genid1 <http://xmlns.com/foaf/0.1/mbox> <mailto:oslo@kb.vlaanderen.be> .
@@ -304,128 +304,128 @@ _:genid1 <http://xmlns.com/foaf/0.1/name> "OSLO Werkgroepen" .
 _:genid2 <http://xmlns.com/foaf/0.1/homepage> <http://idlab.ugent.be> .
 _:genid2 <http://xmlns.com/foaf/0.1/name> "imec - UGent" .
 _:genid3 <http://schema.org/affiliation> _:genid2 .
-_:genid3 <http://xmlns.com/foaf/0.1/mbox> <mailto:laurens.devocht@ugent.be> .
-_:genid3 <http://xmlns.com/foaf/0.1/name> "De Vocht, Laurens" .
+_:genid3 <http://xmlns.com/foaf/0.1/mbox> <mailto:erik.mannens@ugent.be> .
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Mannens, Erik" .
 _:genid4 <http://xmlns.com/foaf/0.1/homepage> <http://idlab.ugent.be> .
 _:genid4 <http://xmlns.com/foaf/0.1/name> "imec - UGent" .
 _:genid5 <http://schema.org/affiliation> _:genid4 .
-_:genid5 <http://xmlns.com/foaf/0.1/mbox> <mailto:erik.mannens@ugent.be> .
-_:genid5 <http://xmlns.com/foaf/0.1/name> "Mannens, Erik" .
+_:genid5 <http://xmlns.com/foaf/0.1/mbox> <mailto:laurens.devocht@ugent.be> .
+_:genid5 <http://xmlns.com/foaf/0.1/name> "De Vocht, Laurens" .
 _:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
 _:genid6 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
 _:genid7 <http://schema.org/affiliation> _:genid6 .
-_:genid7 <http://xmlns.com/foaf/0.1/mbox> <mailto:raf.buyle@agiv.be> .
-_:genid7 <http://xmlns.com/foaf/0.1/name> "Buyle, Raf" .
-_:genid8 <http://xmlns.com/foaf/0.1/homepage> <http://binnenland.vlaanderen.be/> .
-_:genid8 <http://xmlns.com/foaf/0.1/name> "ABB" .
+_:genid7 <http://xmlns.com/foaf/0.1/mbox> <mailto:dries.beheydt@kb.vlaanderen.be> .
+_:genid7 <http://xmlns.com/foaf/0.1/name> "Beheydt, Dries" .
+_:genid8 <http://xmlns.com/foaf/0.1/homepage> <http://hpe.com> .
+_:genid8 <http://xmlns.com/foaf/0.1/name> "HPE" .
 _:genid9 <http://schema.org/affiliation> _:genid8 .
-_:genid9 <http://xmlns.com/foaf/0.1/mbox> <mailto:heidi.godderis@kb.vlaanderen.be> .
-_:genid9 <http://xmlns.com/foaf/0.1/name> "Godderis, Heidi" .
-_:genid10 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
+_:genid9 <http://xmlns.com/foaf/0.1/mbox> <mailto:lieven.verreycken@hpe.com> .
+_:genid9 <http://xmlns.com/foaf/0.1/name> "Verreycken, Lieven" .
+_:genid10 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
 _:genid10 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
 _:genid11 <http://schema.org/affiliation> _:genid10 .
-_:genid11 <http://xmlns.com/foaf/0.1/mbox> <mailto:henk.vanderstraeten@bz.vlaanderen.be> .
-_:genid11 <http://xmlns.com/foaf/0.1/name> "Vanderstraeten, Henk" .
-_:genid12 <http://xmlns.com/foaf/0.1/homepage> <http://cipalschaubroeck.be> .
-_:genid12 <http://xmlns.com/foaf/0.1/name> "Cipal Schaubroeck" .
+_:genid11 <http://xmlns.com/foaf/0.1/mbox> <mailto:Siegfried.Vanlishout@kb.vlaanderen.be> .
+_:genid11 <http://xmlns.com/foaf/0.1/name> "Van Lishout, Ziggy" .
+_:genid12 <http://xmlns.com/foaf/0.1/homepage> <http://www.DGDigitaleTransformatie.belgium.be/> .
+_:genid12 <http://xmlns.com/foaf/0.1/name> "DG Digitale Transformatie" .
 _:genid13 <http://schema.org/affiliation> _:genid12 .
-_:genid13 <http://xmlns.com/foaf/0.1/mbox> <mailto:willem.vanhoecke@cipalschaubroeck.be> .
-_:genid13 <http://xmlns.com/foaf/0.1/name> "Van Hoecke, Willem" .
-_:genid14 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
-_:genid14 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:genid13 <http://xmlns.com/foaf/0.1/mbox> <mailto:liesbet.dhondt@DGDigitaleTransformatie.be> .
+_:genid13 <http://xmlns.com/foaf/0.1/name> "D'Hondt, Liesbet" .
+_:genid14 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
+_:genid14 <http://xmlns.com/foaf/0.1/name> "AgO" .
 _:genid15 <http://schema.org/affiliation> _:genid14 .
-_:genid15 <http://xmlns.com/foaf/0.1/mbox> <mailto:bjorn.devidts@agiv.be> .
-_:genid15 <http://xmlns.com/foaf/0.1/name> "De Vidts, Bj\u00F6rn" .
-_:genid16 <http://xmlns.com/foaf/0.1/homepage> <http://www.DGDigitaleTransformatie.belgium.be/> .
-_:genid16 <http://xmlns.com/foaf/0.1/name> "DG Digitale Transformatie" .
+_:genid15 <http://xmlns.com/foaf/0.1/mbox> <mailto:gijs.martens@bz.vlaanderen.be> .
+_:genid15 <http://xmlns.com/foaf/0.1/name> "Martens, Gijs" .
+_:genid16 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:genid16 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
 _:genid17 <http://schema.org/affiliation> _:genid16 .
-_:genid17 <http://xmlns.com/foaf/0.1/mbox> <mailto:liesbet.dhondt@DGDigitaleTransformatie.be> .
-_:genid17 <http://xmlns.com/foaf/0.1/name> "D'Hondt, Liesbet" .
-_:genid18 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
-_:genid18 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:genid17 <http://xmlns.com/foaf/0.1/mbox> <mailto:Geert.Thijs@kb.vlaanderen.be> .
+_:genid17 <http://xmlns.com/foaf/0.1/name> "Thijs, Geert" .
+_:genid18 <http://xmlns.com/foaf/0.1/homepage> <http://binnenland.vlaanderen.be/> .
+_:genid18 <http://xmlns.com/foaf/0.1/name> "ABB" .
 _:genid19 <http://schema.org/affiliation> _:genid18 .
-_:genid19 <http://xmlns.com/foaf/0.1/mbox> <mailto:Geert.Thijs@agiv.be> .
-_:genid19 <http://xmlns.com/foaf/0.1/name> "Thijs, Geert" .
+_:genid19 <http://xmlns.com/foaf/0.1/mbox> <mailto:heidi.godderis@kb.vlaanderen.be> .
+_:genid19 <http://xmlns.com/foaf/0.1/name> "Godderis, Heidi" .
 _:genid20 <http://xmlns.com/foaf/0.1/homepage> <http://www.belgium.be> .
-_:genid20 <http://xmlns.com/foaf/0.1/name> "Kruispuntbank Sociale Zekerheid" .
+_:genid20 <http://xmlns.com/foaf/0.1/name> "FOD Binnenlandse Zaken - Rijksregister" .
 _:genid21 <http://schema.org/affiliation> _:genid20 .
-_:genid21 <http://xmlns.com/foaf/0.1/mbox> <mailto:mark.demol@ksz-bcss.fgov.be> .
-_:genid21 <http://xmlns.com/foaf/0.1/name> "Demol, Mark" .
+_:genid21 <http://xmlns.com/foaf/0.1/mbox> <mailto:marc.ruymen@rrn.fgov.be> .
+_:genid21 <http://xmlns.com/foaf/0.1/name> "Ruymen, Marc" .
 _:genid22 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
 _:genid22 <http://xmlns.com/foaf/0.1/name> "Soprasteria/IV" .
 _:genid23 <http://schema.org/affiliation> _:genid22 .
-_:genid23 <http://xmlns.com/foaf/0.1/mbox> <mailto:an.boes@agiv.be> .
+_:genid23 <http://xmlns.com/foaf/0.1/mbox> <mailto:an.boes@kb.vlaanderen.be> .
 _:genid23 <http://xmlns.com/foaf/0.1/name> "Boes, An" .
-_:genid24 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
-_:genid24 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:genid24 <http://xmlns.com/foaf/0.1/homepage> <http://cipalschaubroeck.be> .
+_:genid24 <http://xmlns.com/foaf/0.1/name> "Cipal Schaubroeck" .
 _:genid25 <http://schema.org/affiliation> _:genid24 .
-_:genid25 <http://xmlns.com/foaf/0.1/mbox> <mailto:dries.beheydt@agiv.be> .
-_:genid25 <http://xmlns.com/foaf/0.1/name> "Beheydt, Dries" .
+_:genid25 <http://xmlns.com/foaf/0.1/mbox> <mailto:ward.beynaerts@cipalschaubroeck.be> .
+_:genid25 <http://xmlns.com/foaf/0.1/name> "Beynaerts, Ward" .
 _:genid26 <http://xmlns.com/foaf/0.1/homepage> <http://hpe.com> .
 _:genid26 <http://xmlns.com/foaf/0.1/name> "HPE" .
 _:genid27 <http://schema.org/affiliation> _:genid26 .
-_:genid27 <http://xmlns.com/foaf/0.1/mbox> <mailto:lieven.verreycken@hpe.com> .
-_:genid27 <http://xmlns.com/foaf/0.1/name> "Verreycken, Lieven" .
-_:genid28 <http://xmlns.com/foaf/0.1/homepage> <http://idlab.ugent.be> .
-_:genid28 <http://xmlns.com/foaf/0.1/name> "imec - UGent" .
+_:genid27 <http://xmlns.com/foaf/0.1/mbox> <mailto:michael.loedts@hpe.com> .
+_:genid27 <http://xmlns.com/foaf/0.1/name> "Loedts, Michael" .
+_:genid28 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
+_:genid28 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
 _:genid29 <http://schema.org/affiliation> _:genid28 .
-_:genid29 <http://xmlns.com/foaf/0.1/mbox> <mailto:dieter.depaepe@ugent.be> .
-_:genid29 <http://xmlns.com/foaf/0.1/name> "De Paepe, Dieter" .
+_:genid29 <http://xmlns.com/foaf/0.1/mbox> <mailto:bruno.devrieze@kb.vlaanderen.be> .
+_:genid29 <http://xmlns.com/foaf/0.1/name> "De Vrieze, Bruno" .
 _:genid30 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
 _:genid30 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
 _:genid31 <http://schema.org/affiliation> _:genid30 .
 _:genid31 <http://xmlns.com/foaf/0.1/mbox> <mailto:valere.bouserie@bz.vlaanderen.be> .
 _:genid31 <http://xmlns.com/foaf/0.1/name> "Bouserie, Valere" .
-_:genid32 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
-_:genid32 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:genid32 <http://xmlns.com/foaf/0.1/homepage> <http://idlab.ugent.be> .
+_:genid32 <http://xmlns.com/foaf/0.1/name> "imec - UGent" .
 _:genid33 <http://schema.org/affiliation> _:genid32 .
-_:genid33 <http://xmlns.com/foaf/0.1/mbox> <mailto:bruno.devrieze@kb.vlaanderen.be> .
-_:genid33 <http://xmlns.com/foaf/0.1/name> "De Vrieze, Bruno" .
-_:genid34 <http://xmlns.com/foaf/0.1/homepage> <http://hpe.com> .
-_:genid34 <http://xmlns.com/foaf/0.1/name> "HPE" .
+_:genid33 <http://xmlns.com/foaf/0.1/mbox> <mailto:dieter.depaepe@ugent.be> .
+_:genid33 <http://xmlns.com/foaf/0.1/name> "De Paepe, Dieter" .
+_:genid34 <http://xmlns.com/foaf/0.1/homepage> <http://cipalschaubroeck.be> .
+_:genid34 <http://xmlns.com/foaf/0.1/name> "Cipal Schaubroeck" .
 _:genid35 <http://schema.org/affiliation> _:genid34 .
-_:genid35 <http://xmlns.com/foaf/0.1/mbox> <mailto:michael.loedts@hpe.com> .
-_:genid35 <http://xmlns.com/foaf/0.1/name> "Loedts, Michael" .
-_:genid36 <http://xmlns.com/foaf/0.1/homepage> <http://cipalschaubroeck.be> .
-_:genid36 <http://xmlns.com/foaf/0.1/name> "Cipal Schaubroeck" .
+_:genid35 <http://xmlns.com/foaf/0.1/mbox> <mailto:jelle.devreese@cipalschaubroeck.be> .
+_:genid35 <http://xmlns.com/foaf/0.1/name> "Devreese, Jelle" .
+_:genid36 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:genid36 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
 _:genid37 <http://schema.org/affiliation> _:genid36 .
-_:genid37 <http://xmlns.com/foaf/0.1/mbox> <mailto:ward.beynaerts@cipalschaubroeck.be> .
-_:genid37 <http://xmlns.com/foaf/0.1/name> "Beynaerts, Ward" .
-_:genid38 <http://xmlns.com/foaf/0.1/homepage> <http://cipalschaubroeck.be> .
-_:genid38 <http://xmlns.com/foaf/0.1/name> "Cipal Schaubroeck" .
+_:genid37 <http://xmlns.com/foaf/0.1/mbox> <mailto:raf.buyle@kb.vlaanderen.be> .
+_:genid37 <http://xmlns.com/foaf/0.1/name> "Buyle, Raf" .
+_:genid38 <http://xmlns.com/foaf/0.1/homepage> <https://www.lne.be/> .
+_:genid38 <http://xmlns.com/foaf/0.1/name> "LNE" .
 _:genid39 <http://schema.org/affiliation> _:genid38 .
-_:genid39 <http://xmlns.com/foaf/0.1/mbox> <mailto:jelle.devreese@cipalschaubroeck.be> .
-_:genid39 <http://xmlns.com/foaf/0.1/name> "Devreese, Jelle" .
-_:genid40 <http://xmlns.com/foaf/0.1/homepage> <http://geosolutions.be> .
-_:genid40 <http://xmlns.com/foaf/0.1/name> "Geosolutions" .
+_:genid39 <http://xmlns.com/foaf/0.1/mbox> <mailto:geert.vanhaute@lne.vlaanderen.be> .
+_:genid39 <http://xmlns.com/foaf/0.1/name> "Van Haute, Geert" .
+_:genid40 <http://xmlns.com/foaf/0.1/homepage> <http://digipolis.be> .
+_:genid40 <http://xmlns.com/foaf/0.1/name> "Digipolis Gent" .
 _:genid41 <http://schema.org/affiliation> _:genid40 .
-_:genid41 <http://xmlns.com/foaf/0.1/mbox> <mailto:tinne.cahy@geosolutions.be> .
-_:genid41 <http://xmlns.com/foaf/0.1/name> "Cahy, Tinne" .
-_:genid42 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
-_:genid42 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:genid41 <http://xmlns.com/foaf/0.1/mbox> <mailto:Katrien.leire@digipolis.gent> .
+_:genid41 <http://xmlns.com/foaf/0.1/name> "Leire, Katrien" .
+_:genid42 <http://xmlns.com/foaf/0.1/homepage> <http://cipalschaubroeck.be> .
+_:genid42 <http://xmlns.com/foaf/0.1/name> "Cipal Schaubroeck" .
 _:genid43 <http://schema.org/affiliation> _:genid42 .
-_:genid43 <http://xmlns.com/foaf/0.1/mbox> <mailto:Siegfried.Vanlishout@agiv.be> .
-_:genid43 <http://xmlns.com/foaf/0.1/name> "Van Lishout, Ziggy" .
-_:genid44 <http://xmlns.com/foaf/0.1/homepage> <http://digipolis.be> .
-_:genid44 <http://xmlns.com/foaf/0.1/name> "Digipolis Gent" .
+_:genid43 <http://xmlns.com/foaf/0.1/mbox> <mailto:willem.vanhoecke@cipalschaubroeck.be> .
+_:genid43 <http://xmlns.com/foaf/0.1/name> "Van Hoecke, Willem" .
+_:genid44 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:genid44 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
 _:genid45 <http://schema.org/affiliation> _:genid44 .
-_:genid45 <http://xmlns.com/foaf/0.1/mbox> <mailto:Katrien.leire@digipolis.gent> .
-_:genid45 <http://xmlns.com/foaf/0.1/name> "Leire, Katrien" .
-_:genid46 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
-_:genid46 <http://xmlns.com/foaf/0.1/name> "AgO" .
+_:genid45 <http://xmlns.com/foaf/0.1/mbox> <mailto:bjorn.devidts@kb.vlaanderen.be> .
+_:genid45 <http://xmlns.com/foaf/0.1/name> "De Vidts, Bj\u00F6rn" .
+_:genid46 <http://xmlns.com/foaf/0.1/homepage> <http://geosolutions.be> .
+_:genid46 <http://xmlns.com/foaf/0.1/name> "Geosolutions" .
 _:genid47 <http://schema.org/affiliation> _:genid46 .
-_:genid47 <http://xmlns.com/foaf/0.1/mbox> <mailto:gijs.martens@bz.vlaanderen.be> .
-_:genid47 <http://xmlns.com/foaf/0.1/name> "Martens, Gijs" .
-_:genid48 <http://xmlns.com/foaf/0.1/homepage> <https://www.lne.be/> .
-_:genid48 <http://xmlns.com/foaf/0.1/name> "LNE" .
+_:genid47 <http://xmlns.com/foaf/0.1/mbox> <mailto:tinne.cahy@geosolutions.be> .
+_:genid47 <http://xmlns.com/foaf/0.1/name> "Cahy, Tinne" .
+_:genid48 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
+_:genid48 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
 _:genid49 <http://schema.org/affiliation> _:genid48 .
-_:genid49 <http://xmlns.com/foaf/0.1/mbox> <mailto:geert.vanhaute@lne.vlaanderen.be> .
-_:genid49 <http://xmlns.com/foaf/0.1/name> "Van Haute, Geert" .
+_:genid49 <http://xmlns.com/foaf/0.1/mbox> <mailto:henk.vanderstraeten@bz.vlaanderen.be> .
+_:genid49 <http://xmlns.com/foaf/0.1/name> "Vanderstraeten, Henk" .
 _:genid50 <http://xmlns.com/foaf/0.1/homepage> <http://www.belgium.be> .
-_:genid50 <http://xmlns.com/foaf/0.1/name> "FOD Binnenlandse Zaken - Rijksregister" .
+_:genid50 <http://xmlns.com/foaf/0.1/name> "Kruispuntbank Sociale Zekerheid" .
 _:genid51 <http://schema.org/affiliation> _:genid50 .
-_:genid51 <http://xmlns.com/foaf/0.1/mbox> <mailto:marc.ruymen@rrn.fgov.be> .
-_:genid51 <http://xmlns.com/foaf/0.1/name> "Ruymen, Marc" .
+_:genid51 <http://xmlns.com/foaf/0.1/mbox> <mailto:mark.demol@ksz-bcss.fgov.be> .
+_:genid51 <http://xmlns.com/foaf/0.1/name> "Demol, Mark" .
 <http://data.vlaanderen.be/ns/persoon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://data.vlaanderen.be/ns/persoon> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
 <http://data.vlaanderen.be/ns/persoon> <http://www.w3.org/2000/01/rdf-schema#label> "Persoon"@nl .

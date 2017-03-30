@@ -153,7 +153,55 @@
             <foaf:name>Informatie Vlaanderen</foaf:name>
           </rdf:Description>
         </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:bjorn.devidts@agiv.be"/>
+        <foaf:mbox rdf:resource="mailto:katrien.desmet@kb.vlaanderen.be"/>
+        <foaf:name>De Smet, Katrien</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/"/>
+            <foaf:name>Informatie Vlaanderen</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:henk.vanderstraeten@bz.vlaanderen.be"/>
+        <foaf:name>Vanderstraeten, Henk</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
+            <foaf:name>Informatie Vlaanderen</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:dries.beheydt@kb.vlaanderen.be"/>
+        <foaf:name>Beheydt, Dries</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
+            <foaf:name>Informatie Vlaanderen</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:Geert.Thijs@kb.vlaanderen.be"/>
+        <foaf:name>Thijs, Geert</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
+            <foaf:name>Informatie Vlaanderen</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:bjorn.devidts@kb.vlaanderen.be"/>
         <foaf:name>De Vidts, Björn</foaf:name>
       </rdf:Description>
     </foaf:maker>
@@ -173,12 +221,24 @@
       <rdf:Description>
         <schema:affiliation>
           <rdf:Description>
-            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
+            <foaf:homepage rdf:resource="http://cipalschaubroeck.be"/>
+            <foaf:name>Cipal Schaubroeck</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:willem.vanhoecke@cipalschaubroeck.be"/>
+        <foaf:name>Van Hoecke, Willem</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/"/>
             <foaf:name>Informatie Vlaanderen</foaf:name>
           </rdf:Description>
         </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:katrien.desmet@kb.vlaanderen.be"/>
-        <foaf:name>De Smet, Katrien</foaf:name>
+        <foaf:mbox rdf:resource="mailto:quincy.oeyen@bz.vlaanderen.be"/>
+        <foaf:name>Oeyen, Quincy</foaf:name>
       </rdf:Description>
     </foaf:maker>
     <foaf:maker>
@@ -191,30 +251,6 @@
         </schema:affiliation>
         <foaf:mbox rdf:resource="mailto:thomas.dhaenens@bz.vlaanderen.be"/>
         <foaf:name>D'haenens, Thomas</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
-            <foaf:name>Informatie Vlaanderen</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:Geert.Thijs@agiv.be"/>
-        <foaf:name>Thijs, Geert</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="http://idlab.ugent.be"/>
-            <foaf:name>imec - UGent</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:dieter.depaepe@ugent.be"/>
-        <foaf:name>De Paepe, Dieter</foaf:name>
       </rdf:Description>
     </foaf:maker>
     <foaf:maker>
@@ -245,30 +281,6 @@
       <rdf:Description>
         <schema:affiliation>
           <rdf:Description>
-            <foaf:homepage rdf:resource="http://cipalschaubroeck.be"/>
-            <foaf:name>Cipal Schaubroeck</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:willem.vanhoecke@cipalschaubroeck.be"/>
-        <foaf:name>Van Hoecke, Willem</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/"/>
-            <foaf:name>Informatie Vlaanderen</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:henk.vanderstraeten@bz.vlaanderen.be"/>
-        <foaf:name>Vanderstraeten, Henk</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
             <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
             <foaf:name>Informatie Vlaanderen</foaf:name>
           </rdf:Description>
@@ -281,23 +293,11 @@
       <rdf:Description>
         <schema:affiliation>
           <rdf:Description>
-            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/"/>
-            <foaf:name>Informatie Vlaanderen</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:quincy.oeyen@bz.vlaanderen.be"/>
-        <foaf:name>Oeyen, Quincy</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
             <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
             <foaf:name>Informatie Vlaanderen</foaf:name>
           </rdf:Description>
         </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:Siegfried.Vanlishout@agiv.be"/>
+        <foaf:mbox rdf:resource="mailto:Siegfried.Vanlishout@kb.vlaanderen.be"/>
         <foaf:name>Van Lishout, Ziggy</foaf:name>
       </rdf:Description>
     </foaf:maker>
@@ -305,12 +305,12 @@
       <rdf:Description>
         <schema:affiliation>
           <rdf:Description>
-            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
-            <foaf:name>Informatie Vlaanderen</foaf:name>
+            <foaf:homepage rdf:resource="http://idlab.ugent.be"/>
+            <foaf:name>imec - UGent</foaf:name>
           </rdf:Description>
         </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:raf.buyle@agiv.be"/>
-        <foaf:name>Buyle, Raf</foaf:name>
+        <foaf:mbox rdf:resource="mailto:dieter.depaepe@ugent.be"/>
+        <foaf:name>De Paepe, Dieter</foaf:name>
       </rdf:Description>
     </foaf:maker>
     <foaf:maker>
@@ -321,8 +321,8 @@
             <foaf:name>Informatie Vlaanderen</foaf:name>
           </rdf:Description>
         </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:dries.beheydt@agiv.be"/>
-        <foaf:name>Beheydt, Dries</foaf:name>
+        <foaf:mbox rdf:resource="mailto:raf.buyle@kb.vlaanderen.be"/>
+        <foaf:name>Buyle, Raf</foaf:name>
       </rdf:Description>
     </foaf:maker>
   </owl:Ontology>
@@ -366,6 +366,30 @@
   <rdf:Description rdf:about="http://purl.org/vocab/cpsv#produces">
     <rdfs:label xml:lang="nl">produceert</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/OpeningHoursSpecification">
+    <rdfs:label xml:lang="nl">Openingsurenspecificatie</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/closes">
+    <rdfs:label xml:lang="nl">sluit</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/dayOfWeek">
+    <rdfs:label xml:lang="nl">dag van week</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/hoursAvailable">
+    <rdfs:label xml:lang="nl">uren beschikbaarheid</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/openingHours">
+    <rdfs:label xml:lang="nl">openingsuren</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/opens">
+    <rdfs:label xml:lang="nl">opent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/validFrom">
+    <rdfs:label xml:lang="nl">geldig van</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.org/validThrough">
+    <rdfs:label xml:lang="nl">geldig tot</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/ns/adms#status">
     <rdfs:label xml:lang="nl">status</rdfs:label>
   </rdf:Description>
@@ -374,29 +398,5 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/page">
     <rdfs:label xml:lang="nl">pagina</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://schema.org/OpeningHoursSpecification">
-    <rdfs:label xml:lang="nl">Openingsurenspecificatie</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://schema.org/closes">
-    <rdfs:label xml:lang="nl">sluit</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://schema.org/dayOfWeek">
-    <rdfs:label xml:lang="nl">dag van week</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://schema.org/hoursAvailable">
-    <rdfs:label xml:lang="nl">uren beschikbaarheid</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://schema.org/openingHours">
-    <rdfs:label xml:lang="nl">openingsuren</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://schema.org/opens">
-    <rdfs:label xml:lang="nl">opent</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://schema.org/validFrom">
-    <rdfs:label xml:lang="nl">geldig van</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://schema.org/validThrough">
-    <rdfs:label xml:lang="nl">geldig tot</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

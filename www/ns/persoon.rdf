@@ -26,9 +26,6 @@
    xmlns:wdrs="http://www.w3.org/2007/05/powder-s#"
    xmlns:xml="http://www.w3.org/XML/1998/namespace"
    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-  <rdf:Description rdf:about="http:///www.w3.org/ns/person#residency">
-    <rdfs:label xml:lang="nl">inwonerschap</rdfs:label>
-  </rdf:Description>
   <owl:Ontology rdf:about="http://data.vlaanderen.be/ns/persoon">
     <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-31</dcterms:issued>
     <dcterms:mediator>
@@ -51,8 +48,8 @@
             <foaf:name>imec - UGent</foaf:name>
           </rdf:Description>
         </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:laurens.devocht@ugent.be"/>
-        <foaf:name>De Vocht, Laurens</foaf:name>
+        <foaf:mbox rdf:resource="mailto:erik.mannens@ugent.be"/>
+        <foaf:name>Mannens, Erik</foaf:name>
       </rdf:Description>
     </rec:editor>
     <rec:editor>
@@ -63,10 +60,118 @@
             <foaf:name>imec - UGent</foaf:name>
           </rdf:Description>
         </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:erik.mannens@ugent.be"/>
-        <foaf:name>Mannens, Erik</foaf:name>
+        <foaf:mbox rdf:resource="mailto:laurens.devocht@ugent.be"/>
+        <foaf:name>De Vocht, Laurens</foaf:name>
       </rdf:Description>
     </rec:editor>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
+            <foaf:name>Informatie Vlaanderen</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:Siegfried.Vanlishout@kb.vlaanderen.be"/>
+        <foaf:name>Van Lishout, Ziggy</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="http://www.DGDigitaleTransformatie.belgium.be/"/>
+            <foaf:name>DG Digitale Transformatie</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:liesbet.dhondt@DGDigitaleTransformatie.be"/>
+        <foaf:name>D'Hondt, Liesbet</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/"/>
+            <foaf:name>AgO</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:gijs.martens@bz.vlaanderen.be"/>
+        <foaf:name>Martens, Gijs</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
+            <foaf:name>Informatie Vlaanderen</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:Geert.Thijs@kb.vlaanderen.be"/>
+        <foaf:name>Thijs, Geert</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="http://binnenland.vlaanderen.be/"/>
+            <foaf:name>ABB</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:heidi.godderis@kb.vlaanderen.be"/>
+        <foaf:name>Godderis, Heidi</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="http://www.belgium.be"/>
+            <foaf:name>FOD Binnenlandse Zaken - Rijksregister</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:marc.ruymen@rrn.fgov.be"/>
+        <foaf:name>Ruymen, Marc</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
+            <foaf:name>Soprasteria/IV</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:an.boes@kb.vlaanderen.be"/>
+        <foaf:name>Boes, An</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="http://cipalschaubroeck.be"/>
+            <foaf:name>Cipal Schaubroeck</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:ward.beynaerts@cipalschaubroeck.be"/>
+        <foaf:name>Beynaerts, Ward</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="http://hpe.com"/>
+            <foaf:name>HPE</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:michael.loedts@hpe.com"/>
+        <foaf:name>Loedts, Michael</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
     <foaf:maker>
       <rdf:Description>
         <schema:affiliation>
@@ -75,8 +180,80 @@
             <foaf:name>Informatie Vlaanderen</foaf:name>
           </rdf:Description>
         </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:henk.vanderstraeten@bz.vlaanderen.be"/>
-        <foaf:name>Vanderstraeten, Henk</foaf:name>
+        <foaf:mbox rdf:resource="mailto:bruno.devrieze@kb.vlaanderen.be"/>
+        <foaf:name>De Vrieze, Bruno</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/"/>
+            <foaf:name>Informatie Vlaanderen</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:valere.bouserie@bz.vlaanderen.be"/>
+        <foaf:name>Bouserie, Valere</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="http://idlab.ugent.be"/>
+            <foaf:name>imec - UGent</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:dieter.depaepe@ugent.be"/>
+        <foaf:name>De Paepe, Dieter</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="http://cipalschaubroeck.be"/>
+            <foaf:name>Cipal Schaubroeck</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:jelle.devreese@cipalschaubroeck.be"/>
+        <foaf:name>Devreese, Jelle</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
+            <foaf:name>Informatie Vlaanderen</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:raf.buyle@kb.vlaanderen.be"/>
+        <foaf:name>Buyle, Raf</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="https://www.lne.be/"/>
+            <foaf:name>LNE</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:geert.vanhaute@lne.vlaanderen.be"/>
+        <foaf:name>Van Haute, Geert</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="http://digipolis.be"/>
+            <foaf:name>Digipolis Gent</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:Katrien.leire@digipolis.gent"/>
+        <foaf:name>Leire, Katrien</foaf:name>
       </rdf:Description>
     </foaf:maker>
     <foaf:maker>
@@ -99,7 +276,7 @@
             <foaf:name>Informatie Vlaanderen</foaf:name>
           </rdf:Description>
         </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:bjorn.devidts@agiv.be"/>
+        <foaf:mbox rdf:resource="mailto:bjorn.devidts@kb.vlaanderen.be"/>
         <foaf:name>De Vidts, Björn</foaf:name>
       </rdf:Description>
     </foaf:maker>
@@ -107,24 +284,24 @@
       <rdf:Description>
         <schema:affiliation>
           <rdf:Description>
-            <foaf:homepage rdf:resource="http://www.DGDigitaleTransformatie.belgium.be/"/>
-            <foaf:name>DG Digitale Transformatie</foaf:name>
+            <foaf:homepage rdf:resource="http://geosolutions.be"/>
+            <foaf:name>Geosolutions</foaf:name>
           </rdf:Description>
         </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:liesbet.dhondt@DGDigitaleTransformatie.be"/>
-        <foaf:name>D'Hondt, Liesbet</foaf:name>
+        <foaf:mbox rdf:resource="mailto:tinne.cahy@geosolutions.be"/>
+        <foaf:name>Cahy, Tinne</foaf:name>
       </rdf:Description>
     </foaf:maker>
     <foaf:maker>
       <rdf:Description>
         <schema:affiliation>
           <rdf:Description>
-            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
+            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/"/>
             <foaf:name>Informatie Vlaanderen</foaf:name>
           </rdf:Description>
         </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:Geert.Thijs@agiv.be"/>
-        <foaf:name>Thijs, Geert</foaf:name>
+        <foaf:mbox rdf:resource="mailto:henk.vanderstraeten@bz.vlaanderen.be"/>
+        <foaf:name>Vanderstraeten, Henk</foaf:name>
       </rdf:Description>
     </foaf:maker>
     <foaf:maker>
@@ -144,22 +321,10 @@
         <schema:affiliation>
           <rdf:Description>
             <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
-            <foaf:name>Soprasteria/IV</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:an.boes@agiv.be"/>
-        <foaf:name>Boes, An</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
             <foaf:name>Informatie Vlaanderen</foaf:name>
           </rdf:Description>
         </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:dries.beheydt@agiv.be"/>
+        <foaf:mbox rdf:resource="mailto:dries.beheydt@kb.vlaanderen.be"/>
         <foaf:name>Beheydt, Dries</foaf:name>
       </rdf:Description>
     </foaf:maker>
@@ -175,181 +340,13 @@
         <foaf:name>Verreycken, Lieven</foaf:name>
       </rdf:Description>
     </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="http://idlab.ugent.be"/>
-            <foaf:name>imec - UGent</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:dieter.depaepe@ugent.be"/>
-        <foaf:name>De Paepe, Dieter</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/"/>
-            <foaf:name>Informatie Vlaanderen</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:valere.bouserie@bz.vlaanderen.be"/>
-        <foaf:name>Bouserie, Valere</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/"/>
-            <foaf:name>Informatie Vlaanderen</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:bruno.devrieze@kb.vlaanderen.be"/>
-        <foaf:name>De Vrieze, Bruno</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="http://hpe.com"/>
-            <foaf:name>HPE</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:michael.loedts@hpe.com"/>
-        <foaf:name>Loedts, Michael</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="http://cipalschaubroeck.be"/>
-            <foaf:name>Cipal Schaubroeck</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:ward.beynaerts@cipalschaubroeck.be"/>
-        <foaf:name>Beynaerts, Ward</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="http://cipalschaubroeck.be"/>
-            <foaf:name>Cipal Schaubroeck</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:jelle.devreese@cipalschaubroeck.be"/>
-        <foaf:name>Devreese, Jelle</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="http://geosolutions.be"/>
-            <foaf:name>Geosolutions</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:tinne.cahy@geosolutions.be"/>
-        <foaf:name>Cahy, Tinne</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
-            <foaf:name>Informatie Vlaanderen</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:Siegfried.Vanlishout@agiv.be"/>
-        <foaf:name>Van Lishout, Ziggy</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="http://digipolis.be"/>
-            <foaf:name>Digipolis Gent</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:Katrien.leire@digipolis.gent"/>
-        <foaf:name>Leire, Katrien</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/"/>
-            <foaf:name>AgO</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:gijs.martens@bz.vlaanderen.be"/>
-        <foaf:name>Martens, Gijs</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="https://www.lne.be/"/>
-            <foaf:name>LNE</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:geert.vanhaute@lne.vlaanderen.be"/>
-        <foaf:name>Van Haute, Geert</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="http://www.belgium.be"/>
-            <foaf:name>FOD Binnenlandse Zaken - Rijksregister</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:marc.ruymen@rrn.fgov.be"/>
-        <foaf:name>Ruymen, Marc</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
-            <foaf:name>Informatie Vlaanderen</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:raf.buyle@agiv.be"/>
-        <foaf:name>Buyle, Raf</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="http://binnenland.vlaanderen.be/"/>
-            <foaf:name>ABB</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:heidi.godderis@kb.vlaanderen.be"/>
-        <foaf:name>Godderis, Heidi</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
   </owl:Ontology>
   <owl:Class rdf:about="http://data.vlaanderen.be/ns/persoon#Afstamming">
     <vann:usageNote xml:lang="nl">De afstamming kan ook niet-biologisch zijn, bv adoptie. Afstamming kan ook in opgaande lijn worden bekeken. Het begrip is enger dan verwantschap dat oa ook huwelijk inhoudt.</vann:usageNote>
     <rdfs:comment xml:lang="nl">Afstamming is de dalende lijn van bloedverwantschap tussen verschillende generaties.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://data.vlaanderen.be/ns/persoon"/>
     <rdfs:label xml:lang="nl">Afstamming</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://data.vlaanderen.be/ns/persoon#PersoonsRelatie"/>
+    <rdfs:subClassOf rdf:resource="http://data.vlaanderen.be/ns/persoon#Persoonsrelatie"/>
   </owl:Class>
   <owl:Class rdf:about="http://data.vlaanderen.be/ns/persoon#BurgerlijkeStaat">
     <vann:usageNote xml:lang="nl">Slaat op huwelijk, partnerregistratie, afstamming, voogdij etc. Is maw de toestand van bepaalde verhoudingen tussen personen.</vann:usageNote>
@@ -397,14 +394,14 @@
     <rdfs:comment xml:lang="nl">Relatie tussen leden van eenzelfde gezin.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://data.vlaanderen.be/ns/persoon"/>
     <rdfs:label xml:lang="nl">Gezinsrelatie</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://data.vlaanderen.be/ns/persoon#PersoonsRelatie"/>
+    <rdfs:subClassOf rdf:resource="http://data.vlaanderen.be/ns/persoon#Persoonsrelatie"/>
   </owl:Class>
   <owl:Class rdf:about="http://data.vlaanderen.be/ns/persoon#Huwelijk">
     <vann:usageNote xml:lang="nl">Kan, net als bv Samenwonen, de basis vormen van een Gezin.</vann:usageNote>
     <rdfs:comment xml:lang="nl">Een door burgerlijk of religieus recht geregelde samenlevingsvorm van twee personen.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://data.vlaanderen.be/ns/persoon"/>
     <rdfs:label xml:lang="nl">Huwelijk</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://data.vlaanderen.be/ns/persoon#PersoonsRelatie"/>
+    <rdfs:subClassOf rdf:resource="http://data.vlaanderen.be/ns/persoon#Persoonsrelatie"/>
   </owl:Class>
   <owl:Class rdf:about="http://data.vlaanderen.be/ns/persoon#Inwoner">
     <vann:usageNote xml:lang="nl">Plaats of land wordt hier vertegenwoordigd door de entiteit Jurisdictie.</vann:usageNote>
@@ -445,23 +442,23 @@
     <rdfs:label xml:lang="nl">Permanent Inwoner</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://data.vlaanderen.be/ns/persoon#Inwoner"/>
   </owl:Class>
-  <owl:Class rdf:about="http://data.vlaanderen.be/ns/persoon#PersoonsRelatie">
-    <vann:usageNote xml:lang="nl">Typisch zijn dit burgerrechtelijke relaties (zie Burgerlijke Staat) maar niet noodzakelijk daartoe beperkt.</vann:usageNote>
-    <rdfs:comment xml:lang="nl">Relatie tussen twee of meer personen.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://data.vlaanderen.be/ns/persoon"/>
-    <rdfs:label xml:lang="nl">Persoonsrelatie</rdfs:label>
-  </owl:Class>
   <owl:Class rdf:about="http://data.vlaanderen.be/ns/persoon#Persoonsgebeurtenis">
     <rdfs:comment xml:lang="nl">TODO</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://data.vlaanderen.be/ns/persoon"/>
     <rdfs:label xml:lang="nl">Persoonsgebeurtenis</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://data.vlaanderen.be/ns/persoon#Persoonsrelatie">
+    <vann:usageNote xml:lang="nl">Typisch zijn dit burgerrechtelijke relaties (zie Burgerlijke Staat) maar niet noodzakelijk daartoe beperkt.</vann:usageNote>
+    <rdfs:comment xml:lang="nl">Relatie tussen twee of meer personen.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://data.vlaanderen.be/ns/persoon"/>
+    <rdfs:label xml:lang="nl">Persoonsrelatie</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://data.vlaanderen.be/ns/persoon#Samenwonen">
     <vann:usageNote xml:lang="nl">Kan, net als bv een Huwelijk, de basis vormen van een Gezin.</vann:usageNote>
     <rdfs:comment xml:lang="nl">Regeling waarbij twee personen die niet getrouwd zijn samenleven.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://data.vlaanderen.be/ns/persoon"/>
     <rdfs:label xml:lang="nl">Samenwonen</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://data.vlaanderen.be/ns/persoon#PersoonsRelatie"/>
+    <rdfs:subClassOf rdf:resource="http://data.vlaanderen.be/ns/persoon#Persoonsrelatie"/>
   </owl:Class>
   <owl:Class rdf:about="http://data.vlaanderen.be/ns/persoon#Staatsburger">
     <rdfs:comment xml:lang="nl">Persoon die juridisch verbonden is met een staat.</rdfs:comment>
@@ -470,7 +467,7 @@
     <rdfs:subClassOf rdf:resource="http://data.vlaanderen.be/ns/persoon#Staatsburgerschap"/>
   </owl:Class>
   <owl:Class rdf:about="http://data.vlaanderen.be/ns/persoon#Staatsburgerschap">
-    <vann:usageNote xml:lang="nl">Vloeit meestal voort uit de Nationaliteit ve Persoon. De rechten en plichten waarvan sprake zijn burgerrechten (vb godsdienstvrijheid) of van politieke (vb stemrecht) of sociale aard (bv recht op een uitkering).  </vann:usageNote>
+    <vann:usageNote xml:lang="nl">Vloeit meestal voort uit de Nationaliteit ve Persoon. De rechten en plichten waarvan sprake zijn burgerrechten (vb godsdienstvrijheid) of van politieke (vb stemrecht) of sociale aard (bv recht op een uitkering).</vann:usageNote>
     <rdfs:comment xml:lang="nl">Juridische band ve Persoon met een staat, waaraan bepaalde rechten en plichten verbonden zijn</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://data.vlaanderen.be/ns/persoon"/>
     <rdfs:label xml:lang="nl">Staatburgerschap</rdfs:label>
@@ -498,7 +495,7 @@
     <rdfs:comment xml:lang="nl">Situatie waarbij een Persoon die optreedt als voogd ve ander Persoon en in die hoedanigheid instaat voor deze persoon en zijn goederen.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://data.vlaanderen.be/ns/persoon"/>
     <rdfs:label xml:lang="nl">Voogdij</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://data.vlaanderen.be/ns/persoon#PersoonsRelatie"/>
+    <rdfs:subClassOf rdf:resource="http://data.vlaanderen.be/ns/persoon#Persoonsrelatie"/>
   </owl:Class>
   <owl:Class rdf:about="http://data.vlaanderen.be/ns/persoon#Vreemdeling">
     <vann:usageNote xml:lang="nl">Daardoor kan de Persoon geen Staatsburger worden genoemd. In praktijk geniet de Vreemdeling als Inwoner een subset vd burgerrechten die een Staatsbutger wel heeft. Bv wel godsdienstvrijheid maar geen stemrecht.</vann:usageNote>
@@ -604,7 +601,7 @@
     <rdfs:domain rdf:resource="http://www.w3.org/ns/person#Person"/>
     <rdfs:isDefinedBy rdf:resource="http://data.vlaanderen.be/ns/persoon"/>
     <rdfs:label xml:lang="nl">heeft persoonsrelatie</rdfs:label>
-    <rdfs:range rdf:resource="http://data.vlaanderen.be/ns/persoon#PersoonsRelatie"/>
+    <rdfs:range rdf:resource="http://data.vlaanderen.be/ns/persoon#Persoonsrelatie"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://data.vlaanderen.be/ns/persoon#heeftStaatsburgerschap">
     <rdfs:comment xml:lang="nl">TODO</rdfs:comment>
@@ -639,7 +636,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://data.vlaanderen.be/ns/persoon#isRelatieMet">
     <rdfs:comment xml:lang="nl">TODO</rdfs:comment>
-    <rdfs:domain rdf:resource="http://data.vlaanderen.be/ns/persoon#PersoonsRelatie"/>
+    <rdfs:domain rdf:resource="http://data.vlaanderen.be/ns/persoon#Persoonsrelatie"/>
     <rdfs:isDefinedBy rdf:resource="http://data.vlaanderen.be/ns/persoon"/>
     <rdfs:label xml:lang="nl">is relatie met</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/ns/person#Person"/>
@@ -697,6 +694,9 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/ns/person#patronymicName">
     <rdfs:label xml:lang="nl">patroniem</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/person#residency">
+    <rdfs:label xml:lang="nl">inwonerschap</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/familyName">
     <rdfs:label xml:lang="nl">familienaam</rdfs:label>

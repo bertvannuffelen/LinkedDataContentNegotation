@@ -48,8 +48,8 @@
             <foaf:name>imec - UGent</foaf:name>
           </rdf:Description>
         </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:erik.mannens@ugent.be"/>
-        <foaf:name>Mannens, Erik</foaf:name>
+        <foaf:mbox rdf:resource="mailto:laurens.devocht@ugent.be"/>
+        <foaf:name>De Vocht, Laurens</foaf:name>
       </rdf:Description>
     </rec:editor>
     <rec:editor>
@@ -60,32 +60,20 @@
             <foaf:name>imec - UGent</foaf:name>
           </rdf:Description>
         </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:laurens.devocht@ugent.be"/>
-        <foaf:name>De Vocht, Laurens</foaf:name>
+        <foaf:mbox rdf:resource="mailto:erik.mannens@ugent.be"/>
+        <foaf:name>Mannens, Erik</foaf:name>
       </rdf:Description>
     </rec:editor>
     <foaf:maker>
       <rdf:Description>
         <schema:affiliation>
           <rdf:Description>
-            <foaf:homepage rdf:resource="http://tenforce.com"/>
-            <foaf:name>Tenforce</foaf:name>
+            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
+            <foaf:name>Informatie Vlaanderen</foaf:name>
           </rdf:Description>
         </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:Bert.Van.Nuffelen@tenforce.com"/>
-        <foaf:name>Van Nuffelen, Bert</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="https://www.lne.be/"/>
-            <foaf:name>LNE</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:geert.vanhaute@lne.vlaanderen.be"/>
-        <foaf:name>Van Haute, Geert</foaf:name>
+        <foaf:mbox rdf:resource="mailto:Geert.Thijs@kb.vlaanderen.be"/>
+        <foaf:name>Thijs, Geert</foaf:name>
       </rdf:Description>
     </foaf:maker>
     <foaf:maker>
@@ -96,19 +84,7 @@
             <foaf:name>Informatie Vlaanderen</foaf:name>
           </rdf:Description>
         </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:ruben.capiau@agiv.be"/>
-        <foaf:name>Capiau, Ruben</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
-            <foaf:name>Informatie Vlaanderen</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:raf.buyle@agiv.be"/>
+        <foaf:mbox rdf:resource="mailto:raf.buyle@kb.vlaanderen.be"/>
         <foaf:name>Buyle, Raf</foaf:name>
       </rdf:Description>
     </foaf:maker>
@@ -116,48 +92,12 @@
       <rdf:Description>
         <schema:affiliation>
           <rdf:Description>
-            <foaf:homepage rdf:resource="http://idlab.ugent.be"/>
-            <foaf:name>imec - UGent</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:dieter.depaepe@ugent.be"/>
-        <foaf:name>De Paepe, Dieter</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
             <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
             <foaf:name>Informatie Vlaanderen</foaf:name>
           </rdf:Description>
         </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:Siegfried.Vanlishout@agiv.be"/>
+        <foaf:mbox rdf:resource="mailto:Siegfried.Vanlishout@kb.vlaanderen.be"/>
         <foaf:name>Van Lishout, Ziggy</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
-            <foaf:name>Informatie Vlaanderen</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:bjorn.devidts@agiv.be"/>
-        <foaf:name>De Vidts, Björn</foaf:name>
-      </rdf:Description>
-    </foaf:maker>
-    <foaf:maker>
-      <rdf:Description>
-        <schema:affiliation>
-          <rdf:Description>
-            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
-            <foaf:name>Informatie Vlaanderen</foaf:name>
-          </rdf:Description>
-        </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:dries.beheydt@agiv.be"/>
-        <foaf:name>Beheydt, Dries</foaf:name>
       </rdf:Description>
     </foaf:maker>
     <foaf:maker>
@@ -176,12 +116,72 @@
       <rdf:Description>
         <schema:affiliation>
           <rdf:Description>
+            <foaf:homepage rdf:resource="http://tenforce.com"/>
+            <foaf:name>Tenforce</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:Bert.Van.Nuffelen@tenforce.com"/>
+        <foaf:name>Van Nuffelen, Bert</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
             <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
             <foaf:name>Informatie Vlaanderen</foaf:name>
           </rdf:Description>
         </schema:affiliation>
-        <foaf:mbox rdf:resource="mailto:Geert.Thijs@agiv.be"/>
-        <foaf:name>Thijs, Geert</foaf:name>
+        <foaf:mbox rdf:resource="mailto:dries.beheydt@kb.vlaanderen.be"/>
+        <foaf:name>Beheydt, Dries</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
+            <foaf:name>Informatie Vlaanderen</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:bjorn.devidts@kb.vlaanderen.be"/>
+        <foaf:name>De Vidts, Björn</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="https://overheid.vlaanderen.be/informatie-vlaanderen"/>
+            <foaf:name>Informatie Vlaanderen</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:ruben.capiau@kb.vlaanderen.be"/>
+        <foaf:name>Capiau, Ruben</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="https://www.lne.be/"/>
+            <foaf:name>LNE</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:geert.vanhaute@lne.vlaanderen.be"/>
+        <foaf:name>Van Haute, Geert</foaf:name>
+      </rdf:Description>
+    </foaf:maker>
+    <foaf:maker>
+      <rdf:Description>
+        <schema:affiliation>
+          <rdf:Description>
+            <foaf:homepage rdf:resource="http://idlab.ugent.be"/>
+            <foaf:name>imec - UGent</foaf:name>
+          </rdf:Description>
+        </schema:affiliation>
+        <foaf:mbox rdf:resource="mailto:dieter.depaepe@ugent.be"/>
+        <foaf:name>De Paepe, Dieter</foaf:name>
       </rdf:Description>
     </foaf:maker>
   </owl:Ontology>

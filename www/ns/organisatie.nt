@@ -24,10 +24,10 @@
 <http://data.vlaanderen.be/ns/organisatie#bestaatUit> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.vlaanderen.be/ns/adres#AdresseerbaarObject> .
 <http://data.vlaanderen.be/ns/organisatie#isTeBereikenOp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://data.vlaanderen.be/ns/organisatie#isTeBereikenOp> <http://www.w3.org/2000/01/rdf-schema#label> "contactinfo"@nl .
-<http://data.vlaanderen.be/ns/organisatie#isTeBereikenOp> <http://www.w3.org/2000/01/rdf-schema#comment> "Informatie zoals email, telefoon\u0085 die toelaat de Hoedanigheid te contacteren."@nl .
+<http://data.vlaanderen.be/ns/organisatie#isTeBereikenOp> <http://www.w3.org/2000/01/rdf-schema#comment> "Informatie zoals email, telefoon... die toelaat de Hoedanigheid te contacteren."@nl .
 <http://data.vlaanderen.be/ns/organisatie#isTeBereikenOp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.vlaanderen.be/ns/organisatie#Hoedanigheid> .
 <http://data.vlaanderen.be/ns/organisatie#isTeBereikenOp> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.vlaanderen.be/ns/organisatie> .
-<http://data.vlaanderen.be/ns/organisatie#isTeBereikenOp> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/ContactPoint> .
+<http://data.vlaanderen.be/ns/organisatie#isTeBereikenOp> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/ContactPoint> .
 <http://data.vlaanderen.be/ns/organisatie#rechtspersoonlijkheid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://data.vlaanderen.be/ns/organisatie#rechtspersoonlijkheid> <http://www.w3.org/2000/01/rdf-schema#label> "rechtspersoonlijkheid"@nl .
 <http://data.vlaanderen.be/ns/organisatie#rechtspersoonlijkheid> <http://purl.org/vocab/vann/usageNote> "Een rechtspersoon is een juridische constructie die een Organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc). Vb privaatrechterlijke rechtspersonen: vennootschappen, vzw's etc.; vb publiekrechterlijke rechtspersonen: steden, gemeenten etc. Een feitelijke vereniging is in principe geen rechtspersoon."@nl .
@@ -70,6 +70,7 @@
 <http://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organisatie"@nl .
 <http://www.w3.org/ns/org#OrganizationalCollaboration> <http://www.w3.org/2000/01/rdf-schema#label> "Organisationele Samenwerking"@nl .
 <http://www.w3.org/ns/org#OrganizationalUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Organisationele Eenheid"@nl .
+<http://www.w3.org/ns/org#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Rol"@nl .
 <http://www.w3.org/ns/org#basedAt> <http://www.w3.org/2000/01/rdf-schema#label> "heeft standplaats"@nl .
 <http://www.w3.org/ns/org#changedBy> <http://www.w3.org/2000/01/rdf-schema#label> "veranderd door"@nl .
 <http://www.w3.org/ns/org#classification> <http://www.w3.org/2000/01/rdf-schema#label> "classificatie"@nl .
@@ -103,7 +104,6 @@
 <http://www.w3.org/ns/regorg#orgActivity> <http://www.w3.org/2000/01/rdf-schema#label> "organisatieactiviteit"@nl .
 <http://www.w3.org/ns/regorg#registration> <http://www.w3.org/2000/01/rdf-schema#label> "organisatieregistratie"@nl .
 <http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/2000/01/rdf-schema#label> "Homepage"@nl .
-<https://www.w3.org/ns/org#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Rol"@nl .
 <http://data.vlaanderen.be/ns/organisatie#Hoedanigheid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.vlaanderen.be/ns/organisatie#Hoedanigheid> <http://www.w3.org/2000/01/rdf-schema#label> "Hoedanigheid"@nl .
 <http://data.vlaanderen.be/ns/organisatie#Hoedanigheid> <http://www.w3.org/2000/01/rdf-schema#comment> "TODO"@nl .
@@ -127,33 +127,33 @@ _:genid1 <http://xmlns.com/foaf/0.1/name> "OSLO Werkgroepen" .
 _:genid2 <http://xmlns.com/foaf/0.1/homepage> <http://idlab.ugent.be> .
 _:genid2 <http://xmlns.com/foaf/0.1/name> "imec - UGent" .
 _:genid3 <http://schema.org/affiliation> _:genid2 .
-_:genid3 <http://xmlns.com/foaf/0.1/mbox> <mailto:erik.mannens@ugent.be> .
-_:genid3 <http://xmlns.com/foaf/0.1/name> "Mannens, Erik" .
+_:genid3 <http://xmlns.com/foaf/0.1/mbox> <mailto:laurens.devocht@ugent.be> .
+_:genid3 <http://xmlns.com/foaf/0.1/name> "De Vocht, Laurens" .
 _:genid4 <http://xmlns.com/foaf/0.1/homepage> <http://idlab.ugent.be> .
 _:genid4 <http://xmlns.com/foaf/0.1/name> "imec - UGent" .
 _:genid5 <http://schema.org/affiliation> _:genid4 .
-_:genid5 <http://xmlns.com/foaf/0.1/mbox> <mailto:laurens.devocht@ugent.be> .
-_:genid5 <http://xmlns.com/foaf/0.1/name> "De Vocht, Laurens" .
-_:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaanderen.be/nl/contact/adressengids/diensten-van-de-vlaamse-overheid/administratieve-diensten-van-de-vlaamse-overheid/beleidsdomein-financien-en-begroting/departement-financien-en-begroting> .
-_:genid6 <http://xmlns.com/foaf/0.1/name> "DFB" .
+_:genid5 <http://xmlns.com/foaf/0.1/mbox> <mailto:erik.mannens@ugent.be> .
+_:genid5 <http://xmlns.com/foaf/0.1/name> "Mannens, Erik" .
+_:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:genid6 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
 _:genid7 <http://schema.org/affiliation> _:genid6 .
-_:genid7 <http://xmlns.com/foaf/0.1/mbox> <mailto:ward.bemelmans@fb.vlaanderen.be> .
-_:genid7 <http://xmlns.com/foaf/0.1/name> "Bemelmans, Ward" .
-_:genid8 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
-_:genid8 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:genid7 <http://xmlns.com/foaf/0.1/mbox> <mailto:bjorn.devidts@kb.vlaanderen.be> .
+_:genid7 <http://xmlns.com/foaf/0.1/name> "De Vidts, Bj\u00F6rn" .
+_:genid8 <http://xmlns.com/foaf/0.1/homepage> <http://cipalschaubroeck.be> .
+_:genid8 <http://xmlns.com/foaf/0.1/name> "Cipal Schaubroeck" .
 _:genid9 <http://schema.org/affiliation> _:genid8 .
-_:genid9 <http://xmlns.com/foaf/0.1/mbox> <mailto:quincy.oeyen@bz.vlaanderen.be> .
-_:genid9 <http://xmlns.com/foaf/0.1/name> "Oeyen, Quincy" .
-_:genid10 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:genid9 <http://xmlns.com/foaf/0.1/mbox> <mailto:ward.beynaerts@cipalschaubroeck.be> .
+_:genid9 <http://xmlns.com/foaf/0.1/name> "Beynaerts, Ward" .
+_:genid10 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
 _:genid10 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
 _:genid11 <http://schema.org/affiliation> _:genid10 .
-_:genid11 <http://xmlns.com/foaf/0.1/mbox> <mailto:Geert.Thijs@agiv.be> .
-_:genid11 <http://xmlns.com/foaf/0.1/name> "Thijs, Geert" .
-_:genid12 <http://xmlns.com/foaf/0.1/homepage> <https://www.lne.be/> .
-_:genid12 <http://xmlns.com/foaf/0.1/name> "LNE" .
+_:genid11 <http://xmlns.com/foaf/0.1/mbox> <mailto:quincy.oeyen@bz.vlaanderen.be> .
+_:genid11 <http://xmlns.com/foaf/0.1/name> "Oeyen, Quincy" .
+_:genid12 <http://xmlns.com/foaf/0.1/homepage> <http://cipalschaubroeck.be> .
+_:genid12 <http://xmlns.com/foaf/0.1/name> "Cipal Schaubroeck" .
 _:genid13 <http://schema.org/affiliation> _:genid12 .
-_:genid13 <http://xmlns.com/foaf/0.1/mbox> <mailto:geert.vanhaute@lne.vlaanderen.be> .
-_:genid13 <http://xmlns.com/foaf/0.1/name> "Van Haute, Geert" .
+_:genid13 <http://xmlns.com/foaf/0.1/mbox> <mailto:willem.vanhoecke@cipalschaubroeck.be> .
+_:genid13 <http://xmlns.com/foaf/0.1/name> "Van Hoecke, Willem" .
 _:genid14 <http://xmlns.com/foaf/0.1/homepage> <https://www.lne.be/> .
 _:genid14 <http://xmlns.com/foaf/0.1/name> "ANB" .
 _:genid15 <http://schema.org/affiliation> _:genid14 .
@@ -162,53 +162,53 @@ _:genid15 <http://xmlns.com/foaf/0.1/name> "Van der Meersch, Marie-Kristine" .
 _:genid16 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
 _:genid16 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
 _:genid17 <http://schema.org/affiliation> _:genid16 .
-_:genid17 <http://xmlns.com/foaf/0.1/mbox> <mailto:thomas.dhaenens@bz.vlaanderen.be> .
-_:genid17 <http://xmlns.com/foaf/0.1/name> "D'haenens, Thomas" .
-_:genid18 <http://xmlns.com/foaf/0.1/homepage> <http://idlab.ugent.be> .
-_:genid18 <http://xmlns.com/foaf/0.1/name> "imec - UGent" .
+_:genid17 <http://xmlns.com/foaf/0.1/mbox> <mailto:henk.vanderstraeten@bz.vlaanderen.be> .
+_:genid17 <http://xmlns.com/foaf/0.1/name> "Vanderstraeten, Henk" .
+_:genid18 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:genid18 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
 _:genid19 <http://schema.org/affiliation> _:genid18 .
-_:genid19 <http://xmlns.com/foaf/0.1/mbox> <mailto:dieter.depaepe@ugent.be> .
-_:genid19 <http://xmlns.com/foaf/0.1/name> "De Paepe, Dieter" .
-_:genid20 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:genid19 <http://xmlns.com/foaf/0.1/mbox> <mailto:Siegfried.Vanlishout@kb.vlaanderen.be> .
+_:genid19 <http://xmlns.com/foaf/0.1/name> "Van Lishout, Ziggy" .
+_:genid20 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
 _:genid20 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
 _:genid21 <http://schema.org/affiliation> _:genid20 .
-_:genid21 <http://xmlns.com/foaf/0.1/mbox> <mailto:raf.buyle@agiv.be> .
-_:genid21 <http://xmlns.com/foaf/0.1/name> "Buyle, Raf" .
+_:genid21 <http://xmlns.com/foaf/0.1/mbox> <mailto:thomas.dhaenens@bz.vlaanderen.be> .
+_:genid21 <http://xmlns.com/foaf/0.1/name> "D'haenens, Thomas" .
 _:genid22 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
 _:genid22 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
 _:genid23 <http://schema.org/affiliation> _:genid22 .
-_:genid23 <http://xmlns.com/foaf/0.1/mbox> <mailto:Siegfried.Vanlishout@agiv.be> .
-_:genid23 <http://xmlns.com/foaf/0.1/name> "Van Lishout, Ziggy" .
+_:genid23 <http://xmlns.com/foaf/0.1/mbox> <mailto:raf.buyle@kb.vlaanderen.be> .
+_:genid23 <http://xmlns.com/foaf/0.1/name> "Buyle, Raf" .
 _:genid24 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
 _:genid24 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
 _:genid25 <http://schema.org/affiliation> _:genid24 .
-_:genid25 <http://xmlns.com/foaf/0.1/mbox> <mailto:dries.beheydt@agiv.be> .
+_:genid25 <http://xmlns.com/foaf/0.1/mbox> <mailto:dries.beheydt@kb.vlaanderen.be> .
 _:genid25 <http://xmlns.com/foaf/0.1/name> "Beheydt, Dries" .
-_:genid26 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
-_:genid26 <http://xmlns.com/foaf/0.1/name> "ABB" .
+_:genid26 <http://xmlns.com/foaf/0.1/homepage> <https://www.lne.be/> .
+_:genid26 <http://xmlns.com/foaf/0.1/name> "LNE" .
 _:genid27 <http://schema.org/affiliation> _:genid26 .
-_:genid27 <http://xmlns.com/foaf/0.1/mbox> <mailto:suzie.favere@bz.vlaanderen.be> .
-_:genid27 <http://xmlns.com/foaf/0.1/name> "Favere, Suzy" .
-_:genid28 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
-_:genid28 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:genid27 <http://xmlns.com/foaf/0.1/mbox> <mailto:geert.vanhaute@lne.vlaanderen.be> .
+_:genid27 <http://xmlns.com/foaf/0.1/name> "Van Haute, Geert" .
+_:genid28 <http://xmlns.com/foaf/0.1/homepage> <http://idlab.ugent.be> .
+_:genid28 <http://xmlns.com/foaf/0.1/name> "imec - UGent" .
 _:genid29 <http://schema.org/affiliation> _:genid28 .
-_:genid29 <http://xmlns.com/foaf/0.1/mbox> <mailto:henk.vanderstraeten@bz.vlaanderen.be> .
-_:genid29 <http://xmlns.com/foaf/0.1/name> "Vanderstraeten, Henk" .
-_:genid30 <http://xmlns.com/foaf/0.1/homepage> <http://cipalschaubroeck.be> .
-_:genid30 <http://xmlns.com/foaf/0.1/name> "Cipal Schaubroeck" .
+_:genid29 <http://xmlns.com/foaf/0.1/mbox> <mailto:dieter.depaepe@ugent.be> .
+_:genid29 <http://xmlns.com/foaf/0.1/name> "De Paepe, Dieter" .
+_:genid30 <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaanderen.be/nl/contact/adressengids/diensten-van-de-vlaamse-overheid/administratieve-diensten-van-de-vlaamse-overheid/beleidsdomein-financien-en-begroting/departement-financien-en-begroting> .
+_:genid30 <http://xmlns.com/foaf/0.1/name> "DFB" .
 _:genid31 <http://schema.org/affiliation> _:genid30 .
-_:genid31 <http://xmlns.com/foaf/0.1/mbox> <mailto:willem.vanhoecke@cipalschaubroeck.be> .
-_:genid31 <http://xmlns.com/foaf/0.1/name> "Van Hoecke, Willem" .
-_:genid32 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
-_:genid32 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:genid31 <http://xmlns.com/foaf/0.1/mbox> <mailto:ward.bemelmans@fb.vlaanderen.be> .
+_:genid31 <http://xmlns.com/foaf/0.1/name> "Bemelmans, Ward" .
+_:genid32 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
+_:genid32 <http://xmlns.com/foaf/0.1/name> "ABB" .
 _:genid33 <http://schema.org/affiliation> _:genid32 .
-_:genid33 <http://xmlns.com/foaf/0.1/mbox> <mailto:bjorn.devidts@agiv.be> .
-_:genid33 <http://xmlns.com/foaf/0.1/name> "De Vidts, Bj\u00F6rn" .
-_:genid34 <http://xmlns.com/foaf/0.1/homepage> <http://cipalschaubroeck.be> .
-_:genid34 <http://xmlns.com/foaf/0.1/name> "Cipal Schaubroeck" .
+_:genid33 <http://xmlns.com/foaf/0.1/mbox> <mailto:suzie.favere@bz.vlaanderen.be> .
+_:genid33 <http://xmlns.com/foaf/0.1/name> "Favere, Suzy" .
+_:genid34 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:genid34 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
 _:genid35 <http://schema.org/affiliation> _:genid34 .
-_:genid35 <http://xmlns.com/foaf/0.1/mbox> <mailto:ward.beynaerts@cipalschaubroeck.be> .
-_:genid35 <http://xmlns.com/foaf/0.1/name> "Beynaerts, Ward" .
+_:genid35 <http://xmlns.com/foaf/0.1/mbox> <mailto:Geert.Thijs@kb.vlaanderen.be> .
+_:genid35 <http://xmlns.com/foaf/0.1/name> "Thijs, Geert" .
 <http://data.vlaanderen.be/ns/organisatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://data.vlaanderen.be/ns/organisatie> <http://www.w3.org/2000/01/rdf-schema#label> "Organisation"@en .
 <http://data.vlaanderen.be/ns/organisatie> <http://www.w3.org/2000/01/rdf-schema#label> "Organisatie"@nl .
