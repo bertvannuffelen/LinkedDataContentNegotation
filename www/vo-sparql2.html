@@ -53,7 +53,7 @@
 	  YASGUI.YASQE.defaults = cfg1;
 	  YASGUI.defaults.catalogueEndpoints = [{endpoint: 'http://data.vlaanderen.be/sparql', title: 'data.vlaanderen.be endpoint'}];
 	  YASGUI.YASQE.defaults.sparql.endpoint = "http://data.vlaanderen.be/sparql";
-	  YASGUI.YASQE.defaults.value= "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n SELECT * WHERE {\n <http://data.vlaanderen.be/id/adres/2179183> ?pred ?obj . \n } \n LIMIT 10";
+	  YASGUI.YASQE.defaults.value= "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n SELECT * WHERE {\n <http://data.vlaanderen.be/doc/adres/2185403> ?pred ?obj . \n } \n LIMIT 10";
 	  YASGUI.YASQE.defaults.sparql.getQueryForAjax = function(yasqe) {
 	      var b = yasqe.getValue();
 	      var a = "define input:default-graph-exclude <http://www.openlinksw.com/schemas/virtrdf#>, <http://localhost:8890/DAV/>, <http://www.w3.org/2002/07/owl#>, <http://localhost:8890/sparql>, <http://www.w3.org/ns/ldp#> " +  yasqe.getValue();
