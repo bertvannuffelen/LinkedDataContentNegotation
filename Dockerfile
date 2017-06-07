@@ -11,6 +11,9 @@
 #-----------------------------------------------------------------------------------------------------#   
 FROM httpd:2.4
 
+# data.vlaanderen.be specific
+RUN apt-get update && apt-get install -y git
+
 
 # make logs persistent in /logs
 RUN mkdir -p /logs && chmod -R 666 /logs

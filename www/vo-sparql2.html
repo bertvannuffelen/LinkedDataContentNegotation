@@ -21,12 +21,45 @@
   <meta name="msapplication-square310x310logo" content="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/tile-large.png" />
   <meta name="msapplication-TileColor" content="#FFE615" />
 
-  <link href='https://cdn.jsdelivr.net/yasgui/2.4.6/yasgui.min.css' rel='stylesheet' type='text/css'/>
-  <script src='https://cdn.jsdelivr.net/yasgui/2.4.6/yasgui.min.js'></script>
+ <!-- <link href='https://cdn.jsdelivr.net/yasgui/2.6.1/yasgui.min.css' rel='stylesheet' type='text/css'/>
+  <script src='https://cdn.jsdelivr.net/yasgui/2.6.1/yasgui.min.js'></script>
+-->
+
+ <link href='/cms/yasgui/YASGUI-2.6.5/dist/yasgui.min.css' rel='stylesheet' type='text/css'/>
+  <script src='/cms/yasgui/YASGUI-2.6.5/dist/yasgui.min.js'></script>
+
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script> 
+
+<!--
+  <script type="text/javascript">
+	$(function() {
+	  var loc = location.hash;
+	  $('.llLinks a').click( function() {
+			var tabId = this.data('anchor');
+			yasgui.closetab(tabId);																	 
+			console.log(tabId);
+			var tab = yasgui.addTab(tabId);
+			tab.yasqe.setValue(this.data('query'));
+			yasgui.selectTab(tabId)
+	  });
+	});
+	  $('.sparqlLinks a').click( function() {
+			var tabId = this.attr("data-achor");
+			var query = this.attr("data-query");
+			// var tabId = this.data('anchor');
+			yasgui.closetab(tabId);																	 
+			console.log(tabId);
+			var tab = yasgui.addTab(tabId);
+			tab.yasqe.setValue(query);
+			yasgui.selectTab(tabId)
+	  });
+   </script>
+-->
+
 </head>
 
 <body>
-  <div style="min-height:44px;;" id="vlaanderen-header">
+  <div id="sparqltop" style="min-height:44px;;" id="vlaanderen-header">
     <!-- insert your global header here -->
     <script type="text/javascript" src="//widgets.vlaanderen.be/widget/live/5ecf33a0a922428cb9d944c55362ed15"></script>
     <!-- end global header-->
@@ -43,23 +76,81 @@
     <!-- header here -->
     <!-- end header -->
     <div id="main" itemprop="mainContentOfPage" role="main" tabindex="-1" class="main-content">
+	<div class="u-spacer"></div>
+
+
       <div class="region">
         <div class="layout layout--wide">
+	<ul class="grid grid--is-stacked js-equal-height-container sparqlLinks">
+	  <li class="col--4-12 col--6-12--m col--12-12--xs"><a class="button" href="#" data-anchor="gent" data-query='
+ SELECT * WHERE {
+ <http://data.vlaanderen.be/id/adres/2185403> ?pred ?obj . 
+ } 
+ LIMIT 10'
+">Info over een Adres URI</a></li>
+	  <li class="col--4-12 col--6-12--m col--12-12--xs"><a class="button" href="#" data-anchor="adrespunt" data-query='
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT distinct ?adres ?city ?naamlabel  WHERE {
+  ?adres <http://data.vlaanderen.be/ns/adres#heeftGemeentenaam> ?city .
+  ?city rdfs:label "Gent"@nl.
+  ?adres <http://data.vlaanderen.be/ns/adres#heeftStraatnaam> ?naam.
+  ?naam rdfs:label ?naamlabel.
+  filter(STRSTARTS(str(?naamlabel),"Koningin Maria Hendrikaplein")).
+  ?adres <http://data.vlaanderen.be/ns/adres#huisnummer> "70"
+}
+LIMIT 10
 
+'>Adres URI voor een adres</a></li>
+          <li class="col--4-12 col--6-12--m col--12-12--xs"><a class="button" href="#" data-anchor="aantal-adrespunten" data-query='PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?gemeentelabel ?straatlabel ?aantaladrespunten  WHERE {
+   { select ?gemeente ?straatnaam count(?adres) as ?aantaladrespunten where {
+          ?adres <http://data.vlaanderen.be/ns/adres#heeftStraatnaam> ?straatnaam.
+  	  ?adres <http://data.vlaanderen.be/ns/adres#heeftGemeentenaam> ?gemeente.
+          } }
+    
+  ?straatnaam rdfs:label ?straatlabel.
+  filter(lang(?straatlabel)="nl").
+  ?gemeente rdfs:label ?gemeentelabel.
+  filter(lang(?gemeentelabel)="nl").
+}  group by ?gemeentelabel ?straatlabel order by DESC(?aantaladrespunten) ?gemeentelabel ?straatlabel LIMIT 20'>Aantal adrespunten per straat</a></li> 
+       </ul>
+
+        <script>
+	  $('ul a').click( function() {
+			var tabId = $(this).attr("data-anchor");
+			console.log(this);
+			var query = $(this).attr("data-query");
+  			try { yasgui.closeTab(tabId); } catch(err) { console.log("tab not found:" + err) }
+			var tab = '';
+			tab = yasgui.addTab(tabId);
+			yasgui.selectTab(tabId)
+			tab.yasqe.setValue(query);
+			yasgui.selectTab(tabId)
+	  });
+	</script>
+    
+
+       <div class="u-spacer--small"></div>
        <div id="showcase"></div>
        <script type="text/javascript">
-	  var config = {"catalogueEndpoints":[{"endpoint": "http://data.vlaanderen.be/sparql", "title" : "data.vlaanderen.be endpoint"}]};
+	  var config = {"catalogueEndpoints":[{"endpoint": "http://data.vlaanderen.be/sparql", "title" : "data.vlaanderen.be endpoint"}], "endpoint":"http://data.vlaanderen.be/sparql"};
+	  YASGUI.YASQE.defaults.sparql.endpoint = "http://data.vlaanderen.be/sparql";
+	  YASGUI.defaults.catalogueEndpoints = [{endpoint: 'http://data.vlaanderen.be/sparql', title: 'data.vlaanderen.be endpoint'}];
+	  YASGUI.defaults.endpoint = "http://data.vlaanderen.be/sparql";
+	  YASGUI.defaults.yasqe.sparql.endpoint = "http://data.vlaanderen.be/sparql";
 	  var cfg1 = YASGUI.YASQE.defaults;
 	  YASGUI.YASQE.defaults = cfg1;
-	  YASGUI.defaults.catalogueEndpoints = [{endpoint: 'http://data.vlaanderen.be/sparql', title: 'data.vlaanderen.be endpoint'}];
-	  YASGUI.YASQE.defaults.sparql.endpoint = "http://data.vlaanderen.be/sparql";
-	  YASGUI.YASQE.defaults.value= "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n SELECT * WHERE {\n <http://data.vlaanderen.be/doc/adres/2185403> ?pred ?obj . \n } \n LIMIT 10";
+	  YASGUI.YASQE.defaults.value= "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n SELECT * WHERE {\n <http://data.vlaanderen.be/id/adres/2185403> ?pred ?obj . \n } \n LIMIT 10";
 	  YASGUI.YASQE.defaults.sparql.getQueryForAjax = function(yasqe) {
 	      var b = yasqe.getValue();
 	      var a = "define input:default-graph-exclude <http://www.openlinksw.com/schemas/virtrdf#>, <http://localhost:8890/DAV/>, <http://www.w3.org/2002/07/owl#>, <http://localhost:8890/sparql>, <http://www.w3.org/ns/ldp#> " +  yasqe.getValue();
 	      return a;
 	   };
 	  var yasgui = YASGUI(document.getElementById("showcase"), config);
+
 	</script>
 
                       
@@ -73,11 +164,11 @@
 
   <div id="vlaanderen-footer">
     <!-- insert your Vlaanderen-footer-code here -->
-    <script type="text/javascript" src="//widgets.vlaanderen.be/widget/live/d6d44414e7c242f396ab6da8f8da5198"></script>
+    <script type="text/javascript" src="//widgets.vlaanderen.be/widget/live/d6d44414e7c242f396ab6da8f8da5198"></script> 
     <!-- End global footer-->
   </div>
 
-  <script src="https://dij151upo6vad.cloudfront.net/2.latest/js/vlaanderen-ui.js"></script>
+  <script src="https://dij151upo6vad.cloudfront.net/2.latest/js/vlaanderen-ui.js"></script> 
 
 
 </body>
