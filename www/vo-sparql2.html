@@ -30,32 +30,6 @@
 
   <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script> 
 
-<!--
-  <script type="text/javascript">
-	$(function() {
-	  var loc = location.hash;
-	  $('.llLinks a').click( function() {
-			var tabId = this.data('anchor');
-			yasgui.closetab(tabId);																	 
-			console.log(tabId);
-			var tab = yasgui.addTab(tabId);
-			tab.yasqe.setValue(this.data('query'));
-			yasgui.selectTab(tabId)
-	  });
-	});
-	  $('.sparqlLinks a').click( function() {
-			var tabId = this.attr("data-achor");
-			var query = this.attr("data-query");
-			// var tabId = this.data('anchor');
-			yasgui.closetab(tabId);																	 
-			console.log(tabId);
-			var tab = yasgui.addTab(tabId);
-			tab.yasqe.setValue(query);
-			yasgui.selectTab(tabId)
-	  });
-   </script>
--->
-
 </head>
 
 <body>
@@ -83,11 +57,11 @@
         <div class="layout layout--wide">
 	<ul class="grid grid--is-stacked js-equal-height-container sparqlLinks">
 	  <li class="col--4-12 col--6-12--m col--12-12--xs"><a class="button" href="#" data-anchor="gent" data-query='
- SELECT * WHERE {
- <http://data.vlaanderen.be/id/adres/2185403> ?pred ?obj . 
+ SELECT count ( distinct ?adres ) WHERE {
+    ?adres  a <http://data.vlaanderen.be/ns/adres#Adres>.
  } 
  LIMIT 10'
-">Info over een Adres URI</a></li>
+">Aantal adressen</a></li>
 	  <li class="col--4-12 col--6-12--m col--12-12--xs"><a class="button" href="#" data-anchor="adrespunt" data-query='
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -123,15 +97,34 @@ SELECT ?gemeentelabel ?straatlabel ?aantaladrespunten  WHERE {
 			var tabId = $(this).attr("data-anchor");
 			console.log(this);
 			var query = $(this).attr("data-query");
-  			try { yasgui.closeTab(tabId); } catch(err) { console.log("tab not found:" + err) }
-			var tab = '';
-			tab = yasgui.addTab(tabId);
-			yasgui.selectTab(tabId)
-			tab.yasqe.setValue(query);
-			yasgui.selectTab(tabId)
+			var alltabs = yasgui.tabs;
+			var exist = tabNameTaken(tabId);
+			if ( exist ) {
+                            console.log("Tab " + tabId + " found" )
+			    yasgui.selectTab(tabId);
+			} else {
+  			    try { yasgui.closeTab(tabId); } catch(err) { console.log("tab for sure not found:" + err) }
+			    var tab = '';
+			    tab = yasgui.addTab(tabId);
+			    yasgui.selectTab(tabId);
+			    tab.yasqe.setValue(query);
+			    yasgui.selectTab(tabId);
+			};
 	  });
 	</script>
-    
+        <script>
+function tabNameTaken(name) {
+    for (var tId in yasgui.tabs) {
+      console.log("check " +  yasgui.tabs[tId].persistentOptions.name); 
+      console.log("check input " +  name); 
+      if (yasgui.tabs[tId].persistentOptions.name == name) {
+        return true;
+      }
+    }
+    return false;
+};
+</script>
+
 
        <div class="u-spacer--small"></div>
        <div id="showcase"></div>
