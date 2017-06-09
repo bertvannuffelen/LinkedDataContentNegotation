@@ -44,6 +44,7 @@ ENV ENV_URI_DOMAIN data.vlaanderen.be
 ENV ENV_LDSB_SERVICE_URL http://ldsb-service:81
 ENV ENV_SUBJECTPAGES_SERVICE_URL http://subjectpages-service
 ENV ENV_SPARQL_ENDPOINT_SERVICE_URL http://sparql-endpoint-service:8890/sparql
+ENV ENV_RDFDUMP_SERVICE_URL http://sparql-endpoint-service:8890/dumps
 
 # redefine the start of the service to be incorporate the runtime configuration 
 # of environment variables
