@@ -61,6 +61,11 @@ C="http://data.vlaanderen.be/doc/adres/208562.html"
 Tval=200
 no_header_check
 
+
+# event ends with .nt so it should go to the html representation
+C="http://data.vlaanderen.be/doc/adres/event"
+Tval=404
+no_header_check
 echo "check with headers" 
 echo "------------------"
 
