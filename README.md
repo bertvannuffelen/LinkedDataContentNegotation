@@ -95,3 +95,5 @@ This proxy activates content negotation. The table below describes the implement
 | jsonld | application/ld+json| .jsonld|
 | json | application/json| .json|
 
+## Notes
+a) https://pwc-technology-be.github.io/oslo/dienst/dienst.jsonld is used instead of the github version. This is a manual update for now.
