@@ -37,6 +37,17 @@ case $REDIRECT_errorUriScheme in
         echo "Er is niet gekozen voor een HTTP 300 Multiple Choice respons, omdat er geen eenvormige respons gedefinieerd is".
         echo "Voor meer informatie zie <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation">documentatie over Content Negotatie van de Mozilla foundation</a>."
       ;;
+   3)   
+        echo "<br/>"
+        echo "Op dit moment zijn van het gebouwen- en adressenregister enkel de adresidentificatoren 'dereferenceable'"
+        echo "(d.w.z. http://data.vlaanderen.be/id/adres/<objectid> verwijst je naar een subjectpagina).<br/>"
+        echo "Andere identificatoren (gebouw, gebouweenheid, perceel en gemeente) uit het gebouwen- en adressenregister geven voorlopig nog een 404-melding. Subjectpagina's zijn ook hier gepland."
+        echo "<br/>"
+        echo "Alle identificatoren kunnen wel al gebruikt worden als persistente identificator van het object in kwestie."
+        echo "<br/><br/>"
+        echo "Dank voor uw begrip!"
+      ;;
+
    *) echo "onbekende oorzaak"
       ;;
 esac
